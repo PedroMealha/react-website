@@ -1,0 +1,18 @@
+@import '../../components/global/global.styles.scss';
+
+.tooltip {
+	top           : 0;
+	position      : absolute;
+	pointer-events: none;
+	opacity       : 0;
+	margin-top    : -.3em;
+	margin-left   : .5em;
+	z-index       : 100;
+	font-family   : 'Barlow Condensed', sans-serif;
+	font-size     : 1.2em;
+	transition    : .15s opacity ease-in;
+	padding       : .2em .5em .3em;
+	background    : $color-yellow;
+	color         : $color-grey;
+	border-radius : .7em;
+}
