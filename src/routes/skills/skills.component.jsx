@@ -1,6 +1,6 @@
 import './skills.styles.scss';
 
 const Skills = () =>
-	<div>Skills</div>
+	<div>..soon</div>
 
 export default Skills;

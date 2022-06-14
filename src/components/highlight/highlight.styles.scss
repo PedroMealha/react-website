@@ -8,10 +8,39 @@
 	background-position: center 100%;
 	background-repeat  : no-repeat;
 	filter             : drop-shadow(0 0 5px $color-black) drop-shadow(0 0 10px $color-black) drop-shadow(0 0 30px $color-black);
+	overflow           : hidden;
 
 	.logo {
 		max-width: 220px;
 		margin   : 50px auto;
 		padding  : 0 20px;
+	}
+}
+
+.under-construction {
+	position : absolute;
+	top      : 0;
+	transform: rotate(-45deg);
+
+	>div {
+		position     : absolute;
+		top          : 60px;
+		left         : 50%;
+		transform    : translate(-50%);
+		color        : black;
+		font-family  : fantasy;
+		padding      : .3em 0 .2em;
+		width        : 300px;
+		text-align   : center;
+		background   : yellow;
+		border-top   : 3px dotted black;
+		border-bottom: 3px dotted black;
+		white-space  : nowrap;
+
+		p {
+			font-family: "Barlow Condensed", sans-serif;
+			font-size  : .8em;
+			color      : $color-orange;
+		}
 	}
 }
