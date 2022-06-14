@@ -1,0 +1,11 @@
+@import '../../components/global/global.styles.scss';
+
+.skills {
+	a {
+		color: $color-orange;
+
+		&:hover {
+			color: $color-yellow;
+		}
+	}
+}
