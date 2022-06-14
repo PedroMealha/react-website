@@ -1,0 +1,46 @@
+@import '../../components/global/global.styles.scss';
+
+.main-content {
+	display       : flex;
+	flex-direction: column;
+	overflow      : hidden;
+	padding       : 1.5em;
+	background    : $color-grey-dark;
+	overflow-y    : scroll;
+}
+
+.main-content:hover::-webkit-scrollbar-thumb {
+	// visibility: visible;
+	// background: $color-yellow;
+}
+
+::-webkit-scrollbar {
+	width        : 4px;
+	border-radius: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background   : transparent;
+	border-radius: 12px;
+	margin       : .5em 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background      : $color-orange;
+	border-radius   : 12px;
+	border-right    : none;
+	border-left     : none;
+	min-height      : 10px;
+	// visibility   : hidden;
+}
+
+.main-content:hover::-webkit-scrollbar-thumb {
+	visibility: visible;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: $color-yellow;
+}

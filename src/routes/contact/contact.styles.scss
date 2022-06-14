@@ -1,0 +1,66 @@
+@import '../../components/global/global.styles.scss';
+
+.contact-form {
+	display       : flex;
+	flex-direction: column;
+	margin-top    : 1em;
+	height        : 100%;
+
+	>div {
+		display       : flex;
+		flex-direction: column;
+		margin-bottom : 1.5em;
+	}
+
+	label {
+		position   : absolute;
+		margin-left: .5em;
+		font-style : italic;
+		font-size  : 0.9em;
+		transform  : translateX(0);
+		transition : transform .15s ease-in-out;
+	}
+
+
+	.message {
+		min-height: 100px;
+		max-height: 330px;
+		height    : 100%;
+	}
+
+	textarea {
+		resize: vertical;
+		height: 100%;
+	}
+
+	input,
+	textarea {
+		font-size    : 1em;
+		font-style   : italic;
+		background   : none;
+		color        : $color-white;
+		border-bottom: 1px solid $color-grey-light;
+		border-left  : 1px solid $color-grey-light;
+		padding      : .5em 1em;
+		margin-top   : 1em;
+
+		&::placeholder {
+			color: $color-grey-light;
+		}
+
+		&:focus+label {
+			color    : $color-yellow;
+			transform: translateX(0.5em);
+		}
+	}
+
+	.submit {
+		color     : $color-coral;
+		background: $color-orange;
+
+		&:hover {
+			color     : $color-grey;
+			background: $color-coral;
+		}
+	}
+}

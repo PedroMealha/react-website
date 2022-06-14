@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
 import './nav-button.styles.scss';
 
 import ToolTip from '../tooltip/tooltip.component';
+
+import { SectionContext } from "../../context/section.context";
 
 import { ReactComponent as Profile } from '../../assets/profile.svg';
 import { ReactComponent as LinkedIn } from '../../assets/linkedin.svg';
@@ -36,7 +39,13 @@ const toolTipMOnMouseLeave = e => {
 
 const NavButton = ({ buttonType }) => {
 	const navigate = useNavigate();
-	const handleInternalClick = path => navigate(path);
+	const { setCurrentSection } = useContext(SectionContext);
+	const updateCurrentSection = () => setCurrentSection(buttonType);
+
+	const handleInternalClick = path => {
+		updateCurrentSection();
+		navigate(path);
+	};
 	const handleExternalClick = url => window.open(url);
 
 	const BUTTON_TYPES = {

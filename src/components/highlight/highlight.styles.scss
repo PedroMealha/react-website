@@ -1,0 +1,17 @@
+@import '../../components/global/global.styles.scss';
+
+.highlight {
+	align-self         : center;
+	height             : 110%;
+	background         : url(../../assets/profile_bw.jpg);
+	background-size    : cover;
+	background-position: center 100%;
+	background-repeat  : no-repeat;
+	filter             : drop-shadow(0 0 5px $color-black) drop-shadow(0 0 10px $color-black) drop-shadow(0 0 30px $color-black);
+
+	.logo {
+		max-width: 220px;
+		margin   : 50px auto;
+		padding  : 0 20px;
+	}
+}

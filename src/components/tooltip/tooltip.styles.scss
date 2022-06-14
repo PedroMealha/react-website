@@ -12,7 +12,9 @@
 	font-size     : 1.2em;
 	transition    : .15s opacity ease-in;
 	padding       : .2em .5em .3em;
-	background    : $color-yellow;
-	color         : $color-grey;
+	// background    : $color-yellow;
+	// color         : $color-grey;
+	color    : $color-yellow;
 	border-radius : .7em;
+	text-shadow: 1px 1px 10px $color-orange, 1px 1px 3px $color-grey;
 }

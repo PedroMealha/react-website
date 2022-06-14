@@ -45,3 +45,19 @@ h2,
 h3 {
 	font-family: 'Barlow Condensed', sans-serif;
 }
+
+textarea,
+input,
+input::placeholder {
+	font-family: 'Barlow Condensed', sans-serif;
+	outline    : 0;
+	border     : 0;
+}
+
+button {
+	outline    : none;
+	border     : none;
+	padding    : .7em 1em;
+	cursor     : pointer;
+	font-family: 'Quicksand', sans-serif;
+}

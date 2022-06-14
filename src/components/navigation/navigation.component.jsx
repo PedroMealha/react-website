@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import { Outlet } from "react-router-dom";
 
 import NavButton from "../../components/nav-button/nav-button.component";
 
@@ -19,7 +18,6 @@ const Navigation = () => {
 					<NavButton buttonType='contact' />
 				</div>
 			</div>
-			<Outlet />
 		</Fragment >
 	)
 }
