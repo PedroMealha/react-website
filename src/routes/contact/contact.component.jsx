@@ -61,13 +61,13 @@ const Contact = () => {
 				</div>
 
 				<div className="message">
-					<textarea placeholder="" name="message" required onChange={ handleChange } value={ message }></textarea>
+					<textarea placeholder="" name="message" required onChange={ handleChange } value={ message } cols="120"></textarea>
 					<label htmlFor="message">message</label>
 				</div>
 
-				<button className="submit" type="submit">Submit</button>
+				<button className="submit" type="submit">Send</button>
 			</form>
-			<div className={ `popup ${wasSubmitted ? 'success' : ''}` }>Email sent, thank you!</div>
+			<div className={ `popup ${wasSubmitted ? 'success' : ''}` }>Email sent, I'll reply as soon as possible.<br />Thank you!</div>
 		</Fragment>
 	)
 }

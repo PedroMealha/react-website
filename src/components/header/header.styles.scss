@@ -1,14 +1,15 @@
 @import '../../components/global/global.styles.scss';
 
 .header {
+	margin-bottom: 1.5em;
+
 	h1 {
 		text-transform: uppercase;
 		color         : $color-orange;
 	}
 
 	h3 {
-		color        : $color-yellow;
-		margin-bottom: .6em;
-		font-style   : italic;
+		color     : $color-yellow;
+		font-style: italic;
 	}
 }
