@@ -20,7 +20,7 @@ const StackCard = ({ stackType }) => {
 		books: {
 			Icon: Books,
 			title: 'Knowledge seeker',
-			description: 'Keen to share my knowledge, help, discuss, teach and learn from others'
+			description: 'Continuously focused on how to improve my skills so I can deliver my work with the best outcome possible'
 		},
 		stack: {
 			Icon: Stack,

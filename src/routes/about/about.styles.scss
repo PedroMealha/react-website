@@ -23,10 +23,6 @@
 	}
 
 	.stack-card {
-		&:not(:first-child):not(:last-child) {
-			padding: 0 .5em;
-		}
-
 		h3 {
 			margin-left: .6em;
 		}
@@ -35,6 +31,7 @@
 	.strengths {
 		display              : grid;
 		grid-template-columns: repeat(3, 1fr);
+		gap                  : 1em;
 	}
 
 	.stack {
@@ -65,14 +62,7 @@
 
 		.strengths {
 			grid-template-columns: 1fr;
-
-			.stack-card {
-				margin-bottom: 1em;
-
-				&:not(:first-child):not(:last-child) {
-					padding: 0;
-				}
-			}
+			margin-bottom: 1em;
 		}
 	}
 }
