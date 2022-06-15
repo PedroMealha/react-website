@@ -1,4 +1,10 @@
+@import '../../components/global/global.styles.scss';
+
 .home {
 	display       : flex;
 	flex-direction: column;
+
+	span {
+		color: $color-green
+	}
 }

@@ -19,6 +19,7 @@ const MainContent = () => {
 	return (
 		<div className="main-content">
 			<Header section={ currentSection } />
+			
 			<Routes>
 				<Route path='/' element={ <Home /> } />
 				<Route path='/skills' element={ <Skills /> } />

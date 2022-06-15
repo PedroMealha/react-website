@@ -70,7 +70,8 @@
 		color     : $color-coral;
 		background: $color-orange;
 
-		&:hover {
+		&:hover,
+		&:focus {
 			color     : $color-grey;
 			background: $color-coral;
 		}
@@ -83,7 +84,7 @@
 	margin-top : 1em;
 	padding    : .5em 1em;
 	background : #111;
-	color      : #00fa9a;
+	color      : $color-green;
 	opacity    : 0;
 	transform  : translateY(-100%);
 	transition : transform .3s ease-out;

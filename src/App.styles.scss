@@ -9,3 +9,11 @@
 	height               : 100%;
 	padding              : 3%;
 }
+
+@media screen and (max-device-width: 768px) {
+	.routes {
+		grid-template-columns: 70px 1fr;
+		max-height           : initial;
+		padding              : 0;
+	}
+}

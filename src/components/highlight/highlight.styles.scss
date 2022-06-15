@@ -7,7 +7,7 @@
 	background-size    : cover;
 	background-position: center 100%;
 	background-repeat  : no-repeat;
-	filter             : drop-shadow(0 0 5px $color-black) drop-shadow(0 0 10px $color-black) drop-shadow(0 0 30px $color-black);
+	filter             : drop-shadow(0 0 3px $color-black) drop-shadow(0 0 5px $color-black) drop-shadow(0 0 10px $color-black) drop-shadow(0 0 30px $color-black);
 	overflow           : hidden;
 	z-index            : 10;
 
@@ -45,5 +45,11 @@
 			font-size  : .8em;
 			color      : $color-orange;
 		}
+	}
+}
+
+@media screen and (max-device-width: 768px) {
+	.highlight {
+		display: none;
 	}
 }

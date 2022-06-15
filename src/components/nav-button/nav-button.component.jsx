@@ -22,7 +22,6 @@ const toolTipMOnMouseMove = e => {
 
 	const button = e.target;
 	const tooltip = e.target.children[1];
-
 	tooltip.style.opacity = 1;
 
 	const newPos = {
@@ -34,6 +33,7 @@ const toolTipMOnMouseMove = e => {
 
 const toolTipMOnMouseLeave = e => {
 	const tooltip = e.target.children[1];
+	console.log('tooltip:', tooltip);
 	tooltip.style.opacity = 0;
 }
 
