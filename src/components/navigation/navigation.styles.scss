@@ -3,13 +3,8 @@
 .navigation {
 	display       : flex;
 	flex-direction: column;
-	max-width     : 70px;
 	background    : lighten($color-grey, 6%);
-
-	.logo {
-		width  : 100%;
-		padding: 20% 20% 0;
-	}
+	padding       : 0 20px;
 
 	.nav-external {
 		margin: auto;
@@ -20,5 +15,11 @@
 			filter: contrast(.3);
 			cursor: pointer;
 		}
+	}
+}
+
+@media screen and (max-device-width: 768px) {
+	.navigation {
+		padding: 0 10px;
 	}
 }

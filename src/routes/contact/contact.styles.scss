@@ -97,8 +97,12 @@
 	}
 }
 
-// @media only screen and (max-height: 600px) {
-// 	.contact-form {
-// 		flex-flow: row wrap;
-// 	}
-// }
+@media screen and (max-device-width: 768px) {
+	.contact-form {
+
+		.name,
+		.email {
+			width: 100%;
+		}
+	}
+}
