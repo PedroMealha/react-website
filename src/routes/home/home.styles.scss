@@ -27,13 +27,18 @@
 
 	.stack {
 		margin-bottom: 1em;
+
+		span {
+			font-size: .7em;
+			color    : $color-green;
+		}
 	}
 
 	.download {
 		button {
 			&:hover {
 				background: $color-orange;
-				color     : $color-yellow;
+				color     : $color-white;
 			}
 		}
 	}

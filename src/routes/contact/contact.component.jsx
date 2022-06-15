@@ -1,6 +1,8 @@
 import { Fragment, useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 
+import Header from '../../components/header/header.component';
+
 import './contact.styles.scss';
 
 const defaultFormFields = {
@@ -44,6 +46,7 @@ const Contact = () => {
 
 	return (
 		<Fragment>
+		<Header section={ 'contact' } />
 			<form className="contact-form" name="contact-form" onSubmit={ handleSubmit } ref={ form }>
 				<div className="name">
 					<input placeholder="" name="name" type="text" required onChange={ handleChange } value={ name } />
