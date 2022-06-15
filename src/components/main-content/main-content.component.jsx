@@ -10,7 +10,6 @@ import './main-content.styles.scss';
 const MainContent = () => {
 	return (
 		<div className="main-content">
-			
 			<Routes>
 				<Route path='/' element={ <About /> } />
 				<Route path='/skills' element={ <Skills /> } />

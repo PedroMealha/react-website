@@ -3,6 +3,7 @@
 .routes {
 	display              : grid;
 	grid-template-columns: 70px 350px 1fr;
+	grid-template-columns: 1fr 350px 70px;
 	grid-auto-flow       : column;
 	width                : 100%;
 	max-width            : 1200px;
@@ -14,7 +15,7 @@
 @media screen and (max-device-width: 768px) {
 	.routes {
 		grid-template-columns: none;
-		grid-template-rows   : 50px 1fr;
+		grid-template-rows   : 1fr 50px;
 		max-height           : initial;
 		padding              : 0;
 	}

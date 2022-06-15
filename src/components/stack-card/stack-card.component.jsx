@@ -25,7 +25,7 @@ const StackCard = ({ stackType }) => {
 		stack: {
 			Icon: Stack,
 			title: 'MY STACK',
-			description: `Forever looking to expand my tech stack, I bring a variety of knowldge on different programs as well as programming languages such as:`
+			description: `Forever looking to expand my tech stack, I bring a variety of knowledge on different programs as well as programming languages such as:`
 		}
 	}
 

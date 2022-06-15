@@ -7,7 +7,7 @@
 	background    : $color-grey-dark;
 	overflow      : hidden;
 
-	>div:nth-child(2) {
+	>*:nth-child(2) {
 		overflow     : hidden;
 		overflow-y   : scroll;
 		padding-right: .3em;

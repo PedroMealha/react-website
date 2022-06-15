@@ -3,11 +3,11 @@
 .nav-button {
 	position: relative;
 	cursor  : pointer;
+	margin  : 1em;
 
 	.nav-icon {
 		display       : block;
 		width         : 25px;
-		margin        : 1em;
 		fill          : $color-orange;
 		pointer-events: none;
 	}

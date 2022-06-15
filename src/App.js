@@ -6,9 +6,9 @@ import './App.styles.scss';
 
 const App = () =>
 	<div className="routes">
-		<Navigation />
-		<Highlight />
 		<MainContent />
+		<Highlight />
+		<Navigation />
 	</div >
 
 export default App;

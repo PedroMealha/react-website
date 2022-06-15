@@ -41,26 +41,31 @@ const STACK_SKILLS = {
 		learning: false
 	},
 	6: {
+		title: 'Git',
+		percent: 40,
+		learning: false
+	},
+	7: {
 		title: 'UI/UX',
 		percent: 85,
 		learning: false
 	},
-	7: {
+	8: {
 		title: 'Adobe Photoshop',
 		percent: 95,
 		learning: false
 	},
-	8: {
+	9: {
 		title: 'Adobe Illustrator',
 		percent: 95,
 		learning: false
 	},
-	9: {
+	10: {
 		title: 'Adobe XD',
 		percent: 80,
 		learning: false
 	},
-	10: {
+	11: {
 		title: 'Adobe After Effects',
 		percent: 50,
 		learning: false

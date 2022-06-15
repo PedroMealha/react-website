@@ -100,6 +100,11 @@
 @media screen and (max-device-width: 768px) {
 	.contact-form {
 
+		input,
+		textarea {
+			border-left: none;
+		}
+
 		.name,
 		.email {
 			width: 100%;
