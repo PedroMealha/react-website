@@ -1,11 +1,15 @@
 @import '../../components/global/global.styles.scss';
 
 .skills {
-	a {
-		color: $color-orange;
+	button {
+		margin-top: 1em;
+		color     : $color-coral;
+		background: $color-orange;
 
-		&:hover {
-			color: $color-yellow;
+		&:hover,
+		&:focus {
+			color     : $color-grey;
+			background: $color-coral;
 		}
 	}
 }
