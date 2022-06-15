@@ -1,7 +1,7 @@
 
 import { Routes, Route } from "react-router-dom";
 
-import Home from "../../routes/home/home.component";
+import About from "../../routes/about/about.component";
 import Skills from "../../routes/skills/skills.component";
 import Contact from "../../routes/contact/contact.component";
 
@@ -12,7 +12,7 @@ const MainContent = () => {
 		<div className="main-content">
 			
 			<Routes>
-				<Route path='/' element={ <Home /> } />
+				<Route path='/' element={ <About /> } />
 				<Route path='/skills' element={ <Skills /> } />
 				<Route path='/contact' element={ <Contact /> } />
 			</Routes>

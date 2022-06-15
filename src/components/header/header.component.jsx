@@ -1,7 +1,7 @@
 import './header.styles.scss';
 
 const HEADERS = {
-	profile: {
+	about: {
 		h1: 'about me',
 		h3: 'Frontend Developer / Portugal'
 	},

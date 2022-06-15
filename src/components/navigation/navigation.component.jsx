@@ -10,7 +10,7 @@ const Navigation = () => {
 		<Fragment>
 			<div className="navigation">
 				<div className="nav-external">
-					<NavButton buttonType='profile' />
+					<NavButton buttonType='about' />
 					<NavButton buttonType='linkedin' />
 					<NavButton buttonType='github' />
 					<NavButton buttonType='behance' />

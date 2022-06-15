@@ -7,7 +7,7 @@ import Progress from "../../components/progress/progress.component";
 
 import Logo from '../../assets/logo.svg';
 
-import './home.styles.scss';
+import './about.styles.scss';
 
 const STACK_SKILLS = {
 	0: {
@@ -67,11 +67,11 @@ const STACK_SKILLS = {
 	}
 }
 
-const Home = () => {
+const About = () => {
 	return (
 		<Fragment>
-			<Header section={ 'profile' } />
-			<div className="home">
+			<Header section={ 'about' } />
+			<div className="about">
 				<img className="logo" src={ Logo } alt="logo" />
 
 				<p className="intro">Frontend Developer with <span>6+ years</span> of experience creating desktop & mobile web content with high focus on clean code, cross-browser compatibility, performance and asset management as well as technical expertise on <span>interactive</span>, <span>dynamic</span> and <span>complex creatives</span> using <span>Javascript</span>, <span>HTML</span> and <span>CSS</span> (Less/Sass).<br /><br />
@@ -97,4 +97,4 @@ const Home = () => {
 	)
 }
 
-export default Home;
+export default About;

@@ -7,7 +7,7 @@ import ToolTip from '../tooltip/tooltip.component';
 
 import { SectionContext } from "../../context/section.context";
 
-import { ReactComponent as Profile } from '../../assets/profile.svg';
+import { ReactComponent as About } from '../../assets/about.svg';
 import { ReactComponent as LinkedIn } from '../../assets/linkedin.svg';
 import { ReactComponent as GitHub } from '../../assets/github.svg';
 import { ReactComponent as Behance } from '../../assets/behance.svg';
@@ -48,10 +48,10 @@ const NavButton = ({ buttonType }) => {
 	const handleExternalClick = url => window.open(url);
 
 	const BUTTON_TYPES = {
-		profile: {
-			Icon: Profile,
+		about: {
+			Icon: About,
 			url: () => handleInternalClick('/'),
-			tooltip: 'Profile'
+			tooltip: 'About'
 		},
 		linkedin: {
 			Icon: LinkedIn,

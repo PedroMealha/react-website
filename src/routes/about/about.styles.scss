@@ -1,6 +1,6 @@
 @import '../../components/global/global.styles.scss';
 
-.home {
+.about {
 	display       : flex;
 	flex-direction: column;
 
@@ -53,7 +53,7 @@
 }
 
 @media screen and (max-device-width: 768px) {
-	.home {
+	.about {
 
 		.logo {
 			display: block;
