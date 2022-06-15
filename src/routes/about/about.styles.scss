@@ -39,30 +39,33 @@
 
 		span {
 			font-size: .7em;
-			color    : $color-green;
+			color    : $color-blue;
 		}
 	}
 
 	.download {
 		button {
 			&:hover {
-				background: $color-orange;
+				background: $color-blue;
 				color     : $color-white;
 			}
 		}
 	}
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 980px) {
 	.about {
-
-		.logo {
-			display: block;
-		}
-
 		.strengths {
 			grid-template-columns: 1fr;
-			margin-bottom: 1em;
+			margin-bottom        : 1em;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about {
+		.logo {
+			display: block;
 		}
 	}
 }

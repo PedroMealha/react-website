@@ -4,7 +4,7 @@
 	display        : flex;
 	align-items    : center;
 	justify-content: center;
-	background     : lighten($color-grey, 6%);
+	background     : $color-blue;
 
 	.nav-external {
 		display        : flex;
@@ -14,7 +14,7 @@
 	}
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
 	.navigation {
 		padding: 0 10px;
 

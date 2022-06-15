@@ -2,7 +2,7 @@
 
 .highlight {
 	align-self         : center;
-	height             : 110%;
+	height             : 105%;
 	background         : url(../../assets/profile_bw.jpg);
 	background-size    : cover;
 	background-position: center 100%;
@@ -20,7 +20,7 @@
 	}
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
 	.highlight {
 		display: none;
 	}

@@ -5,11 +5,12 @@
 
 	h1 {
 		text-transform: uppercase;
-		color         : $color-orange;
+		color         : $color-blue;
 	}
 
 	h3 {
-		color     : $color-yellow;
-		font-style: italic;
+		color      : $color-blue-light;
+		font-style : italic;
+		font-weight: 500;
 	}
 }

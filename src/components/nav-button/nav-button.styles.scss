@@ -8,13 +8,13 @@
 	.nav-icon {
 		display       : block;
 		width         : 25px;
-		fill          : $color-orange;
+		fill          : $color-grey;
 		pointer-events: none;
 	}
 
 	&:hover {
 		.nav-icon {
-			fill: $color-yellow;
+			fill: $color-blue-light;
 		}
 	}
 }

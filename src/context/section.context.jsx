@@ -29,6 +29,7 @@ export const SectionContext = createContext({
 
 export const SectionProvider = ({ children }) => {
 	const [{ currentSection }, dispatch] = useReducer(sectionReducer, INITIAL_SECTION);
+	console.log('currentSection:', currentSection);
 
 	const setCurrentSection = section => {
 		dispatch({

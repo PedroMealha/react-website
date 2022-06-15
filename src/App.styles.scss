@@ -2,17 +2,17 @@
 
 .routes {
 	display              : grid;
-	grid-template-columns: 70px 350px 1fr;
-	grid-template-columns: 1fr 350px 70px;
+	// grid-template-columns: 70px 350px 1fr;
+	grid-template-columns: 1fr 400px 70px;
 	grid-auto-flow       : column;
 	width                : 100%;
-	max-width            : 1200px;
-	max-height           : 800px;
+	max-width            : 1600px;
+	max-height           : 1000px;
 	height               : 100%;
 	padding              : 3%;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
 	.routes {
 		grid-template-columns: none;
 		grid-template-rows   : 1fr 50px;
