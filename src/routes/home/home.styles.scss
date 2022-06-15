@@ -4,7 +4,37 @@
 	display       : flex;
 	flex-direction: column;
 
-	span {
-		color: $color-green
+	p {
+		&.intro {
+			margin-bottom: 2em;
+		}
+
+		span {
+			color: $color-green;
+		}
+	}
+
+	.strengths {
+		display              : grid;
+		grid-template-columns: repeat(3, 1fr);
+
+		.stack-card {
+			&:not(:first-child):not(:last-child) {
+				padding: 0 .5em;
+			}
+		}
+	}
+
+	.stack {
+		margin-bottom: 1em;
+	}
+
+	.download {
+		button {
+			&:hover {
+				background: $color-orange;
+				color     : $color-yellow;
+			}
+		}
 	}
 }

@@ -1,0 +1,39 @@
+@import '../../components/global/global.styles.scss';
+
+.tool {
+	display    : flex;
+	align-items: center;
+	color      : $color-yellow;
+	font-family: 'Barlow Condensed', sans-serif;
+
+	p {
+		white-space: nowrap;
+	}
+
+	span {
+		color: $color-orange;
+	}
+
+	.progress {
+		width        : 100%;
+		background   : rgba($color-grey-light, 20%);
+		height       : 3px;
+		margin       : 0 1em;
+		border-radius: 100px;
+
+		>div {
+			display        : flex;
+			align-items    : center;
+			justify-content: end;
+			height         : 100%;
+			background     : linear-gradient(to right, rgba($color-green, 5%), lighten($color-green, 10%));
+
+			div {
+				width        : 7px;
+				height       : 7px;
+				background   : lighten($color-green, 10%);
+				border-radius: 50%;
+			}
+		}
+	}
+}

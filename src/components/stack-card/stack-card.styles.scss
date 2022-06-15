@@ -1,0 +1,22 @@
+@import '../../components/global/global.styles.scss';
+
+
+
+.stack-card {
+	display       : flex;
+	flex-direction: column;
+
+	>div {
+		display    : inline-flex;
+		align-items: center;
+
+		svg {
+			max-width: 35px;
+			fill     : $color-orange;
+		}
+	}
+
+	p {
+		margin-bottom: .5em;
+	}
+}

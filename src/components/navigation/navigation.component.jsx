@@ -11,7 +11,6 @@ const Navigation = () => {
 			<div className="navigation">
 				<div className="nav-external">
 					<NavButton buttonType='profile' />
-					<NavButton buttonType='skills' />
 					<NavButton buttonType='linkedin' />
 					<NavButton buttonType='github' />
 					<NavButton buttonType='behance' />
