@@ -23,3 +23,9 @@
 		}
 	}
 }
+
+body.dark-mode {
+	.navigation {
+		background: rgba($color-blue, 70%);
+	}
+}

@@ -2,7 +2,6 @@
 
 .routes {
 	display              : grid;
-	// grid-template-columns: 70px 350px 1fr;
 	grid-template-columns: 1fr 400px 70px;
 	grid-auto-flow       : column;
 	width                : 100%;

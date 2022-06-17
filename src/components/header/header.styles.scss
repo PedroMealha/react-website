@@ -1,16 +1,31 @@
 @import '../../components/global/global.styles.scss';
 
 .header {
-	margin-bottom: 1.5em;
+	display        : flex;
+	justify-content: space-between;
+	align-items    : center;
+	margin-bottom  : 1.5em;
 
 	h1 {
 		text-transform: uppercase;
-		color         : $color-blue;
+		color         : darken($color-blue, 15%);
 	}
 
 	h3 {
-		color      : $color-blue-light;
+		color      : darken($color-blue-light, 10%);
 		font-style : italic;
 		font-weight: 500;
+	}
+}
+
+body.dark-mode {
+	.header {
+		h1 {
+			color: $color-blue;
+		}
+
+		h3 {
+			color: $color-blue-light;
+		}
 	}
 }

@@ -1,20 +1,35 @@
 @import '../../components/global/global.styles.scss';
 
 .nav-button {
-	position: relative;
-	cursor  : pointer;
-	margin  : 1em;
+	position   : relative;
+	cursor     : pointer;
+	margin     : 1em;
+	user-select: none;
 
 	.nav-icon {
 		display       : block;
 		width         : 25px;
-		fill          : $color-grey;
+		fill          : $color-blue-light;
 		pointer-events: none;
 	}
 
 	&:hover {
 		.nav-icon {
-			fill: $color-blue-light;
+			fill: $color-grey;
+		}
+	}
+}
+
+body.dark-mode {
+	.nav-button {
+		.nav-icon {
+			fill: $color-grey;
+		}
+
+		&:hover {
+			.nav-icon {
+				fill: $color-blue-light;
+			}
 		}
 	}
 }

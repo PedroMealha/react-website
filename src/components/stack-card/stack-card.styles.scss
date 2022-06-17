@@ -1,7 +1,5 @@
 @import '../../components/global/global.styles.scss';
 
-
-
 .stack-card {
 	display       : flex;
 	flex-direction: column;
@@ -12,15 +10,29 @@
 
 		svg {
 			max-width: 35px;
-			fill     : $color-blue;
+			fill     : darken($color-blue, 15%);
 		}
 	}
 
 	h3 {
-		color: lighten($color-grey, 40%);
+		color: darken($color-blue, 5%);
 	}
 
 	p {
 		margin-bottom: .5em;
+	}
+}
+
+body.dark-mode {
+	.stack-card {
+		>div {
+			svg {
+				fill: $color-blue;
+			}
+		}
+
+		h3 {
+			color: lighten($color-grey, 40%);
+		}
 	}
 }

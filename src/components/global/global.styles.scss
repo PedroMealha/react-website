@@ -1,7 +1,7 @@
-$color-white  : #FFFFFF;
-$color-black  : #000000;
-$color-grey   : #1D1E20;
+$color-white      : #FFFFFF;
+$color-black      : #000000;
+$color-grey       : #1D1E20;
 $color-blue       : #3C7287;
-$color-blue-light : adjust-hue(lighten($color-blue, 40%), 10%);
+$color-blue-light : adjust-hue(lighten($color-blue, 40%), 10deg);
 
 $color-green : #61FFC3;

@@ -6,7 +6,7 @@ const Progress = ({ skill }) => {
 
 	return (
 		<div className="tool">
-			<p>{ title }<span>{ learning ? ' *' : '' }</span></p>
+			<p>{ title } <span>{ learning ? '*' : '' }</span></p>
 			<div className="progress">
 				<div style={ { width: `${percent}%` } }>
 					<div></div>

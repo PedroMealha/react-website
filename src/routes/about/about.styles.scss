@@ -12,13 +12,14 @@
 		filter   : drop-shadow(0px 2px 2px rgba($color-grey, .6));
 	}
 
-	p {
+	>p {
 		&.intro {
 			margin-bottom: 2em;
 		}
 
 		span {
-			color: $color-green;
+			color      : darken($color-green, 40%);
+			font-weight: 700;
 		}
 	}
 
@@ -37,17 +38,19 @@
 	.stack {
 		margin-bottom: 1em;
 
-		span {
+		>span {
 			font-size: .7em;
-			color    : $color-blue;
+			color    : darken($color-blue, 45%);
 		}
 	}
 
 	.download {
 		button {
+			background: darken($color-blue, 15%);
+			color     : $color-white;
+
 			&:hover {
 				background: $color-blue;
-				color     : $color-white;
 			}
 		}
 	}
@@ -66,6 +69,31 @@
 	.about {
 		.logo {
 			display: block;
+		}
+	}
+}
+
+body.dark-mode {
+	.about {
+		>p {
+			span {
+				color: $color-green;
+			}
+		}
+	}
+
+	.stack {
+		> span {
+			color: $color-blue;
+		}
+	}
+
+	.download {
+		button {
+			&:hover {
+				background: $color-blue;
+				color     : $color-white;
+			}
 		}
 	}
 }

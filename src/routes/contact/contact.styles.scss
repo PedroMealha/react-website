@@ -9,60 +9,59 @@
 
 	>div {
 		display      : flex;
-		margin-bottom: 1.5em;
-	}
+		margin-bottom: .5em;
 
-	label {
-		position   : absolute;
-		margin-left: .5em;
-		font-style : italic;
-		font-size  : 0.9em;
-		transform  : translateX(0);
-		transition : transform .15s ease-in-out;
-	}
-
-	input {
-		width: 100%;
-	}
-
-	input,
-	textarea {
-		font-size    : 1em;
-		font-style   : italic;
-		background   : none;
-		color        : $color-white;
-		border-bottom: 1px solid lighten($color-grey, 10%);
-		border-left  : 1px solid lighten($color-grey, 10%);
-		width        : 100%;
-		padding      : 1.5em .7em .5em;
-
-		&::placeholder {
-			color: lighten($color-grey, 10%);
+		label {
+			position   : absolute;
+			margin-left: .5em;
+			font-style : italic;
+			font-size  : 0.9em;
+			transform  : translateX(0);
+			transition : transform .15s ease-in-out;
 		}
 
-		&:focus+label {
-			color    : $color-blue-light;
-			transform: translateX(0.5em);
+		input {
+			width: 100%;
 		}
-	}
 
-	.name,
-	.email {
-		width: 48%;
-	}
-
-	.subject {
-		width: 100%;
-	}
-
-	.message {
-		width: 100%;
-
+		input,
 		textarea {
-			height    : 100%;
-			min-height: 2.5em;
-			max-height: 330px;
-			resize    : vertical;
+			font-size    : 1em;
+			font-style   : italic;
+			background   : none;
+			color        : $color-white;
+			border-bottom: 1px solid lighten($color-grey, 10%);
+			width        : 100%;
+			padding      : 0 .5em .5em;
+			margin       : 1.5em 0 1em;
+
+			&::placeholder {
+				color: lighten($color-grey, 10%);
+			}
+
+			&:focus+label {
+				color     : $color-blue-light;
+				transform : translateX(0.5em);
+				background: none;
+			}
+		}
+
+		&.name,
+		&.email {
+			width: 48%;
+		}
+
+		&.subject {
+			width: 100%;
+		}
+
+		&.message {
+			width: 100%;
+
+			textarea {
+				height: 100px;
+				resize: vertical;
+			}
 		}
 	}
 
@@ -99,25 +98,12 @@
 
 @media screen and (max-width: 980px) {
 	.contact-form {
+		>div {
 
-		.name,
-		.email {
-			width: 100%;
-		}
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.contact-form {
-
-		input,
-		textarea {
-			border-left: none;
-		}
-
-		.name,
-		.email {
-			width: 100%;
+			&.name,
+			&.email {
+				width: 100%;
+			}
 		}
 	}
 }

@@ -12,9 +12,16 @@
 	font-size     : 1.2em;
 	transition    : .15s opacity ease-in;
 	padding       : .2em .5em .3em;
-	// background    : $color-blue-light;
-	// color         : $color-grey;
-	color    : $color-blue-light;
+	color         : $color-grey;
 	border-radius : .7em;
-	text-shadow: 1px 1px 10px $color-blue, 1px 1px 3px $color-grey;
+	text-shadow   : 1px 1px 10px $color-blue, 1px 1px 3px $color-grey;
+	pointer-events: none;
+	user-select   : none;
+}
+
+body.dark-mode {
+	.tooltip {
+		color      : $color-blue-light;
+		text-shadow: 1px 1px 10px $color-blue, 1px 1px 3px $color-grey;
+	}
 }

@@ -50,22 +50,22 @@ const Contact = () => {
 			<form className="contact-form" name="contact-form" onSubmit={ handleSubmit } ref={ form }>
 				<div className="name">
 					<input placeholder="" name="name" type="text" required onChange={ handleChange } value={ name } />
-					<label htmlFor="name">name</label>
+					<label>name</label>
 				</div>
 
 				<div className="email">
 					<input placeholder="" type="email" name="email" required onChange={ handleChange } value={ email } />
-					<label htmlFor="email">e-mail</label>
+					<label>e-mail</label>
 				</div>
 
 				<div className="subject">
 					<input placeholder="" name="subject" type="text" required onChange={ handleChange } value={ subject } />
-					<label htmlFor="subject">subject</label>
+					<label>subject</label>
 				</div>
 
 				<div className="message">
 					<textarea placeholder="" name="message" required onChange={ handleChange } value={ message } cols="120"></textarea>
-					<label htmlFor="message">message</label>
+					<label>message</label>
 				</div>
 
 				<button className="submit" type="submit">Send</button>

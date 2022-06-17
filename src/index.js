@@ -14,7 +14,7 @@ root.render(
 	<React.StrictMode>
 		<BrowserRouter>
 			<SectionProvider>
-				<App />
+					<App />
 			</SectionProvider>
 		</BrowserRouter>
 	</React.StrictMode>

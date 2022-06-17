@@ -7,11 +7,13 @@
 	font-family: 'Barlow Condensed', sans-serif;
 
 	p {
+		color      : $color-blue;
 		white-space: nowrap;
-	}
 
-	span {
-		color: $color-blue;
+		span {
+			color    : $color-blue;
+			font-size: 0.8em;
+		}
 	}
 
 	.progress {
@@ -24,15 +26,40 @@
 		>div {
 			display        : flex;
 			align-items    : center;
-			justify-content: end;
+			justify-content: flex-end;
 			height         : 100%;
-			background     : linear-gradient(to right, rgba($color-green, 5%), $color-green);
+			background     : linear-gradient(to right, rgba($color-blue, 5%), $color-blue);
 
 			div {
 				width        : 7px;
 				height       : 7px;
-				background   : $color-green;
+				background   : $color-blue;
 				border-radius: 50%;
+			}
+		}
+	}
+}
+
+body.dark-mode {
+	.tool {
+		color: $color-blue-light;
+
+		p {
+			color      : $color-blue;
+			white-space: nowrap;
+		}
+
+		span {
+			color: $color-blue;
+		}
+
+		.progress {
+			>div {
+				background: linear-gradient(to right, rgba($color-green, 5%), $color-green);
+
+				div {
+					background: $color-green;
+				}
 			}
 		}
 	}
