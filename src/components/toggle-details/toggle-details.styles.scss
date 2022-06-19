@@ -1,0 +1,49 @@
+@import '../global/global.styles.scss';
+
+.toggle-details {
+	position       : fixed;
+	right          : 0;
+	display        : none;
+	flex-flow      : column wrap;
+	justify-content: space-between;
+	width          : $padding;
+	height         : $padding * .7;
+	margin         : 15px;
+	z-index        : 500;
+	cursor         : pointer;
+
+	div {
+		height          : 2px;
+		background      : #61DFFF;
+		border-radius   : 10px;
+		margin          : 2.5px 0;
+		transform-origin: left;
+		transition      : transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+	}
+
+	.top {
+		transform: rotate(0deg);
+	}
+
+	.bottom {
+		transform: rotate(0deg);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.toggle-details {
+		display: flex;
+
+		&.open {
+			color: $color-copy;
+
+			.top {
+				transform: rotate(24deg);
+			}
+
+			.bottom {
+				transform: rotate(-24deg);
+			}
+		}
+	}
+}

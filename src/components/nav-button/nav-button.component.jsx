@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom";
 
 import './nav-button.styles.scss';
 
-import ToolTip from '../tooltip/tooltip.component';
-
 import { SectionContext } from "../../context/section.context";
 import { NavigationContext } from "../../context/navigation.context";
 
@@ -14,28 +12,6 @@ import { ReactComponent as GitHub } from '../../assets/github.svg';
 import { ReactComponent as Behance } from '../../assets/behance.svg';
 import { ReactComponent as Contact } from '../../assets/contact.svg';
 import { ReactComponent as Skills } from '../../assets/skills.svg';
-
-const toolTipMOnMouseMove = e => {
-	const pos = {
-		x: e.pageX,
-		y: e.pageY
-	}
-
-	const button = e.target;
-	const tooltip = e.target.children[1];
-	tooltip.style.opacity = 1;
-
-	const newPos = {
-		x: pos.x - button.offsetLeft,
-		y: pos.y - button.offsetTop - tooltip.clientHeight / 2
-	}
-	tooltip.style.transform = `translate(${newPos.x}px, ${newPos.y}px)`;
-}
-
-const toolTipMOnMouseLeave = e => {
-	const tooltip = e.target.children[1];
-	tooltip.style.opacity = 0;
-}
 
 const NavButton = ({ buttonType }) => {
 	const { isNavOpen, setIsNavOpen } = useContext(NavigationContext);
@@ -86,7 +62,7 @@ const NavButton = ({ buttonType }) => {
 		}
 	}
 
-	const { Icon, url, tooltip } = BUTTON_TYPES[buttonType];
+	const { Icon, url } = BUTTON_TYPES[buttonType];
 
 	const handleClick = () => {
 		if (isNavOpen) toggleIsCartOpen();
@@ -96,7 +72,6 @@ const NavButton = ({ buttonType }) => {
 	return (
 		<div className="nav-button" onClick={ handleClick } >
 			<Icon className="nav-icon" />
-			{/* <ToolTip tooltip={ tooltip } /> */ }
 		</div>
 	)
 }
