@@ -84,9 +84,9 @@ const NavButton = ({ buttonType }) => {
 	const { Icon, url, tooltip } = BUTTON_TYPES[buttonType];
 
 	return (
-		<div className="nav-button" onMouseMove={ e => toolTipMOnMouseMove(e) } onMouseLeave={ e => toolTipMOnMouseLeave(e) } onMouseUp={ e => toolTipMOnMouseLeave(e) } onClick={ url } >
+		<div className="nav-button" onClick={ url } >
 			<Icon className="nav-icon" />
-			<ToolTip tooltip={ tooltip } />
+			{/* <ToolTip tooltip={ tooltip } /> */}
 		</div>
 	)
 }

@@ -3,97 +3,46 @@
 .about {
 	display       : flex;
 	flex-direction: column;
+	margin        : $padding * 3 $padding 0;
 
 	.logo {
 		display  : none;
 		max-width: 60%;
 		margin   : 1em auto 2em;
-		padding  : 0 20px;
-		filter   : drop-shadow(0px 2px 2px rgba($color-grey, .6));
+		padding  : 0 $padding;
+		filter   : drop-shadow(0px 2px 2px rgba($color-bg, .6));
 	}
 
-	>p {
-		&.intro {
-			margin-bottom: 2em;
-		}
-
-		span {
-			color      : darken($color-green, 40%);
-			font-weight: 700;
-		}
+	.intro {
+		margin-bottom: $padding * 2;
 	}
 
-	.stack-card {
-		h3 {
-			margin-left: .6em;
-		}
+	span {
+		color: $color-highlight;
 	}
 
 	.strengths {
-		display              : grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap                  : 1em;
-	}
+		display        : flex;
+		justify-content: space-between;
+		flex-direction : row;
+		gap            : $padding;
 
-	.stack {
-		margin-bottom: 1em;
-
-		>span {
-			font-size: .7em;
-			color    : darken($color-blue, 45%);
-		}
-	}
-
-	.download {
-		button {
-			background: darken($color-blue, 15%);
-			color     : $color-white;
-
-			&:hover {
-				background: $color-blue;
+		.stack-card {
+			h3 {
+				margin-left: .6em;
 			}
 		}
 	}
 }
 
-@media screen and (max-width: 980px) {
+@media only screen and (max-width: 1024px) {
 	.about {
+		.intro {
+			margin-bottom: $padding;
+		}
+
 		.strengths {
-			grid-template-columns: 1fr;
-			margin-bottom        : 1em;
-		}
-	}
-}
-
-@media screen and (max-width: 768px) {
-	.about {
-		.logo {
-			display: block;
-		}
-	}
-}
-
-body.dark-mode {
-	.about {
-		>p {
-			span {
-				color: $color-green;
-			}
-		}
-	}
-
-	.stack {
-		> span {
-			color: $color-blue;
-		}
-	}
-
-	.download {
-		button {
-			&:hover {
-				background: $color-blue;
-				color     : $color-white;
-			}
+			flex-direction: column;
 		}
 	}
 }

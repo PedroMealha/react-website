@@ -2,10 +2,10 @@
 
 .skills {
 	a {
-		color: $color-blue;
+		color: $color-highlight;
 
 		&:hover {
-			color: $color-blue-light;
+			color: lighten($color-highlight, 10%);
 		}
 	}
 }

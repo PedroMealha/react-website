@@ -1,9 +1,9 @@
 import './theme-button.styles.scss';
 
-const getUserTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-if (getUserTheme) document.body.classList.add('dark-mode');
+const getUserTheme = window.matchMedia('(prefers-color-scheme: light)').matches;
+if (getUserTheme) document.body.classList.add('light');
 
-const updateCurrentTheme = () => document.body.classList.toggle('dark-mode');
+const updateCurrentTheme = () => document.body.classList.toggle('light-mode');
 
 const ThemeButton = () =>
 	<button className="theme-button" onClick={ updateCurrentTheme }></button>

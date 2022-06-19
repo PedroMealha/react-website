@@ -7,7 +7,7 @@
 	background-size    : cover;
 	background-position: center 100%;
 	background-repeat  : no-repeat;
-	filter             : drop-shadow(0 0 3px darken($color-blue, 10%)) drop-shadow(0 0 5px darken($color-blue, 10%)) drop-shadow(0 0 20px darken($color-blue, 10%));
+	filter             : drop-shadow(0 0 3px darken(darken($color-highlight, 10%), 10%)) drop-shadow(0 0 5px darken(darken($color-highlight, 10%), 10%)) drop-shadow(0 0 20px darken(darken($color-highlight, 10%), 10%));
 	overflow           : hidden;
 	z-index            : 10;
 
@@ -16,7 +16,7 @@
 		max-height: 40%;
 		margin    : 15% auto;
 		padding   : 0 20px;
-		filter    : drop-shadow(0px 2px 2px rgba($color-grey, .6));
+		filter    : drop-shadow(0px 2px 2px rgba($color-bg, .6));
 	}
 }
 
@@ -26,13 +26,12 @@
 	}
 }
 
-body.dark-mode {
-	.highlight {
-		filter: drop-shadow(0 0 3px $color-black) drop-shadow(0 0 5px $color-black) drop-shadow(0 0 20px $color-black);
+// body.dark-mode {
+// 	.highlight {
+// 		filter: drop-shadow(0 0 3px $color-black) drop-shadow(0 0 5px $color-black) drop-shadow(0 0 20px $color-black);
 
-		.logo {
-			filter: drop-shadow(0px 2px 2px rgba($color-grey, .6));
-		}
-	}
-
-}
+// 		.logo {
+// 			filter: drop-shadow(0px 2px 2px rgba($color-bg, .6));
+// 		}
+// 	}
+// }

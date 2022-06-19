@@ -1,24 +1,21 @@
 @import '../../components/global/global.styles.scss';
 
 .tool {
-	display    : flex;
-	align-items: center;
-	color      : $color-blue-light;
-	font-family: 'Barlow Condensed', sans-serif;
+	// display       : flex;
+	// align-items   : center;
+	color         : lighten($color-sub-copy, 10%);
+	font-size     : .9em;
+	text-transform: lowercase;
+	margin        : 5px;
 
 	p {
-		color      : $color-blue;
-		white-space: nowrap;
-
-		span {
-			color    : $color-blue;
-			font-size: 0.8em;
-		}
+		margin-bottom: 5px;
+		white-space  : nowrap;
 	}
 
 	.progress {
 		width        : 100%;
-		background   : rgba(lighten($color-grey, 10%), 20%);
+		background   : $color-bg;
 		height       : 3px;
 		margin       : 0 1em;
 		border-radius: 100px;
@@ -28,38 +25,13 @@
 			align-items    : center;
 			justify-content: flex-end;
 			height         : 100%;
-			background     : linear-gradient(to right, rgba($color-blue, 5%), $color-blue);
+			background     : linear-gradient(to right, rgba(darken($color-highlight, 10%), 5%), darken($color-highlight, 10%));
 
 			div {
 				width        : 7px;
 				height       : 7px;
-				background   : $color-blue;
+				background   : darken($color-highlight, 10%);
 				border-radius: 50%;
-			}
-		}
-	}
-}
-
-body.dark-mode {
-	.tool {
-		color: $color-blue-light;
-
-		p {
-			color      : $color-blue;
-			white-space: nowrap;
-		}
-
-		span {
-			color: $color-blue;
-		}
-
-		.progress {
-			>div {
-				background: linear-gradient(to right, rgba($color-green, 5%), $color-green);
-
-				div {
-					background: $color-green;
-				}
 			}
 		}
 	}

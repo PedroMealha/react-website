@@ -3,6 +3,7 @@
 .stack-card {
 	display       : flex;
 	flex-direction: column;
+	color         : $color-sub-copy;
 
 	>div {
 		display    : inline-flex;
@@ -10,29 +11,15 @@
 
 		svg {
 			max-width: 35px;
-			fill     : darken($color-blue, 15%);
+			fill     : darken(darken($color-highlight, 10%), 15%);
 		}
 	}
 
 	h3 {
-		color: darken($color-blue, 5%);
+		color: $color-copy;
 	}
 
 	p {
 		margin-bottom: .5em;
-	}
-}
-
-body.dark-mode {
-	.stack-card {
-		>div {
-			svg {
-				fill: $color-blue;
-			}
-		}
-
-		h3 {
-			color: lighten($color-grey, 40%);
-		}
 	}
 }

@@ -45,7 +45,7 @@ const Contact = () => {
 	};
 
 	return (
-		<Fragment>
+		<div className="contact-wrapper">
 		<Header section={ 'contact' } />
 			<form className="contact-form" name="contact-form" onSubmit={ handleSubmit } ref={ form }>
 				<div className="name">
@@ -71,7 +71,7 @@ const Contact = () => {
 				<button className="submit" type="submit">Send</button>
 			</form>
 			<div className={ `popup ${wasSubmitted ? 'success' : ''}` }>Email sent, I'll reply as soon as possible.<br />Thank you!</div>
-		</Fragment>
+		</div>
 	)
 }
 

@@ -1,10 +1,11 @@
 @import '../../components/global/global.styles.scss';
 
 .navigation {
-	display        : flex;
-	align-items    : center;
-	justify-content: center;
-	background     : $color-blue;
+	position  : absolute;
+	right     : 0;
+	width     : 50px;
+	height    : calc(100vh - 30px);
+	background: darken($color-bg, 4%);
 
 	.nav-external {
 		display        : flex;
@@ -24,8 +25,8 @@
 	}
 }
 
-body.dark-mode {
-	.navigation {
-		background: rgba($color-blue, 70%);
-	}
-}
+// body.dark-mode {
+// 	.navigation {
+// 		background: rgba(darken($color-highlight, 10%), 70%);
+// 	}
+// }

@@ -3,33 +3,19 @@
 .nav-button {
 	position   : relative;
 	cursor     : pointer;
-	margin     : 1em;
+	margin    : 10px 0;
 	user-select: none;
 
 	.nav-icon {
 		display       : block;
 		width         : 25px;
-		fill          : $color-blue-light;
+		fill          : $color-copy;
 		pointer-events: none;
 	}
 
 	&:hover {
 		.nav-icon {
-			fill: $color-grey;
-		}
-	}
-}
-
-body.dark-mode {
-	.nav-button {
-		.nav-icon {
-			fill: $color-grey;
-		}
-
-		&:hover {
-			.nav-icon {
-				fill: $color-blue-light;
-			}
+			fill: $color-highlight;
 		}
 	}
 }

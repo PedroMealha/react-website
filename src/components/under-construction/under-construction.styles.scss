@@ -4,7 +4,7 @@
 	position : absolute;
 	top      : 0;
 	transform: rotate(-45deg);
-	filter   : drop-shadow(0px 2px 7px rgba($color-grey, .6));
+	filter   : drop-shadow(0px 2px 7px rgba($color-bg, .6));
 
 	>div {
 		position     : absolute;
@@ -22,9 +22,8 @@
 		white-space  : nowrap;
 
 		p {
-			font-family: "Barlow Condensed", sans-serif;
 			font-size  : .8em;
-			color      : $color-blue;
+			color      : darken($color-highlight, 10%);
 		}
 	}
 }

@@ -1,31 +1,36 @@
 @import '../../components/global/global.styles.scss';
 
 .header {
-	display        : flex;
-	justify-content: space-between;
-	align-items    : center;
-	margin-bottom  : 1.5em;
+	position           : relative;
+	display            : flex;
+	justify-content    : space-between;
+	// align-items    : center;
+	margin-bottom      : 1.5em;
+	height             : 200px;
+	background         : url(../../assets/header.svg);
+	background-size    : cover;
+	background-position: bottom;
 
-	h1 {
-		text-transform: uppercase;
-		color         : darken($color-blue, 15%);
+	.gradient {
+		position  : absolute;
+		bottom    : 0;
+		width     : 100%;
+		height    : 100%;
+		background: linear-gradient(to right, darken($color-bg, 2%) 0%, rgba(darken($color-bg, 2%), 50%) 50%, rgba(darken($color-bg, 2%), 50%) 80%, darken($color-bg, 2%) 100%);
 	}
 
-	h3 {
-		color      : darken($color-blue-light, 10%);
-		font-style : italic;
-		font-weight: 500;
-	}
-}
+	.copy {
+		z-index: 1;
 
-body.dark-mode {
-	.header {
 		h1 {
-			color: $color-blue;
+			text-transform: uppercase;
+			color         : $color-copy;
 		}
 
 		h3 {
-			color: $color-blue-light;
+			color      : $color-sub-copy;
+			font-style : italic;
+			font-weight: 300;
 		}
 	}
 }

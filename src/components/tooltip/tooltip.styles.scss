@@ -8,20 +8,18 @@
 	margin-top    : -.3em;
 	margin-left   : .5em;
 	z-index       : 100;
-	font-family   : 'Barlow Condensed', sans-serif;
-	font-size     : 1.2em;
 	transition    : .15s opacity ease-in;
 	padding       : .2em .5em .3em;
-	color         : $color-grey;
+	color         : $color-bg;
 	border-radius : .7em;
-	text-shadow   : 1px 1px 10px $color-blue, 1px 1px 3px $color-grey;
+	text-shadow   : 1px 1px 10px darken($color-highlight, 10%), 1px 1px 3px $color-bg;
 	pointer-events: none;
 	user-select   : none;
 }
 
-body.dark-mode {
-	.tooltip {
-		color      : $color-blue-light;
-		text-shadow: 1px 1px 10px $color-blue, 1px 1px 3px $color-grey;
-	}
-}
+// body.dark-mode {
+// 	.tooltip {
+// 		color      : lighten($color-highlight, 10%);
+// 		text-shadow: 1px 1px 10px darken($color-highlight, 10%), 1px 1px 3px $color-bg;
+// 	}
+// }

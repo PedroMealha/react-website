@@ -5,6 +5,7 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { NavigationProvider } from "./context/navigation.context";
 import { SectionProvider } from "./context/section.context";
 
 import { BrowserRouter } from "react-router-dom";
@@ -13,9 +14,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
 		<BrowserRouter>
-			<SectionProvider>
+			<NavigationProvider>
+				<SectionProvider>
 					<App />
-			</SectionProvider>
+				</SectionProvider>
+			</NavigationProvider>
 		</BrowserRouter>
 	</React.StrictMode>
 );

@@ -1,3 +1,4 @@
+
 import './header.styles.scss';
 
 import ThemeButton from "../theme-button/theme-button.component";
@@ -5,15 +6,11 @@ import ThemeButton from "../theme-button/theme-button.component";
 const HEADERS = {
 	about: {
 		h1: 'about me',
-		h3: 'Frontend Developer'
-	},
-	skills: {
-		h1: 'skills',
-		h3: 'What I offer'
+		h3: 'Who am I?'
 	},
 	contact: {
 		h1: 'contact',
-		h3: 'Get in touch!'
+		h3: 'Let\'s talk?'
 	},
 }
 
@@ -22,11 +19,12 @@ const Header = ({ section }) => {
 
 	return (
 		<div className="header">
-			<div>
+			<div className="gradient"></div>
+			<div className="copy">
 				<h1>{ h1 }</h1>
 				<h3>{ h3 }</h3>
 			</div>
-			<ThemeButton />
+			{/* <ThemeButton /> */}
 		</div>
 	)
 }
