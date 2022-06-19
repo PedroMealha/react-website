@@ -6,6 +6,7 @@ import './nav-button.styles.scss';
 import ToolTip from '../tooltip/tooltip.component';
 
 import { SectionContext } from "../../context/section.context";
+import { NavigationContext } from "../../context/navigation.context";
 
 import { ReactComponent as About } from '../../assets/about.svg';
 import { ReactComponent as LinkedIn } from '../../assets/linkedin.svg';
@@ -37,6 +38,10 @@ const toolTipMOnMouseLeave = e => {
 }
 
 const NavButton = ({ buttonType }) => {
+	const { isNavOpen, setIsNavOpen } = useContext(NavigationContext);
+	const toggleIsCartOpen = () => setIsNavOpen(false);
+
+
 	const navigate = useNavigate();
 	const { setCurrentSection } = useContext(SectionContext);
 	const updateCurrentSection = () => setCurrentSection(buttonType);
@@ -83,10 +88,15 @@ const NavButton = ({ buttonType }) => {
 
 	const { Icon, url, tooltip } = BUTTON_TYPES[buttonType];
 
+	const handleClick = () => {
+		if (isNavOpen) toggleIsCartOpen();
+		url();
+	}
+
 	return (
-		<div className="nav-button" onClick={ url } >
+		<div className="nav-button" onClick={ handleClick } >
 			<Icon className="nav-icon" />
-			{/* <ToolTip tooltip={ tooltip } /> */}
+			{/* <ToolTip tooltip={ tooltip } /> */ }
 		</div>
 	)
 }

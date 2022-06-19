@@ -1,4 +1,4 @@
-import { Fragment, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
 
 import Header from '../../components/header/header.component';
@@ -70,6 +70,7 @@ const Contact = () => {
 
 				<button className="submit" type="submit">Send</button>
 			</form>
+			
 			<div className={ `popup ${wasSubmitted ? 'success' : ''}` }>Email sent, I'll reply as soon as possible.<br />Thank you!</div>
 		</div>
 	)
