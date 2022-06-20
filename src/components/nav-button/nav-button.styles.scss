@@ -3,7 +3,7 @@
 .nav-button {
 	position   : relative;
 	cursor     : pointer;
-	margin    : 10px 0;
+	margin     : 10px 0;
 	user-select: none;
 
 	.nav-icon {
@@ -12,10 +12,30 @@
 		fill          : $color-copy;
 		pointer-events: none;
 	}
+}
 
-	&:hover {
+
+@media (hover: hover) {
+	.nav-button:hover {
 		.nav-icon {
 			fill: $color-highlight;
+		}
+	}
+}
+
+body.light-mode {
+	.nav-button {
+		.nav-icon {
+			fill: $color-copy-lt;
+		}
+	}
+
+
+	@media (hover: hover) {
+		.nav-button:hover {
+			.nav-icon {
+				fill: $color-highlight-lt;
+			}
 		}
 	}
 }

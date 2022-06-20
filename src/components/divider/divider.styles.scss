@@ -5,3 +5,9 @@
 	height    : 1px;
 	background: lighten($color-panel, 10%);
 }
+
+body.light-mode {
+	.divider {
+		background: lighten($color-panel-lt, 10%);
+	}
+}

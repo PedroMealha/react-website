@@ -156,3 +156,56 @@
 		}
 	}
 }
+
+body.light-mode {
+	.app-details-wrapper {
+		background: $color-panel-lt;
+
+		.avatar-wrapper {
+			background: $panel-gradient-lt;
+
+			.avatar {
+
+				.name {
+					color: $color-copy-lt;
+				}
+
+				.profession {
+					color: $color-sub-copy-lt;
+				}
+
+				.download {
+					&:focus {
+						background: $color-highlight-lt;
+					}
+				}
+			}
+		}
+
+		.avatar-shadow {
+			background: linear-gradient(to bottom, $color-panel-lt 5%, rgba($color-panel-lt, 0%) 80%);
+		}
+
+		.personal-info-wrapper {
+
+			.personal-info {
+				.location {
+					ul {
+						li {
+							span {
+								color: $color-sub-copy-lt;
+							}
+						}
+					}
+				}
+
+				.skills-wrapper {
+
+					.learning {
+						color: $color-sub-copy-lt;
+					}
+				}
+			}
+		}
+	}
+}

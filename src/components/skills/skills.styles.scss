@@ -9,3 +9,15 @@
 		}
 	}
 }
+
+body.light-mode {
+	.skills {
+		a {
+			color: $color-highlight-lt;
+
+			&:hover {
+				color: lighten($color-highlight-lt, 10%);
+			}
+		}
+	}
+}

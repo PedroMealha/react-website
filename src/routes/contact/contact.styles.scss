@@ -1,98 +1,98 @@
 @import '../../components/global/global.styles.scss';
 
 .contact-wrapper {
-	margin   : $padding * 3 $padding 0;
-}
+	margin: $padding * 3 $padding 0;
 
-.contact-form {
-	position       : relative;
-	display        : flex;
-	flex-direction : row;
-	flex-wrap      : wrap;
-	justify-content: space-between;
+	.contact-form {
+		position       : relative;
+		display        : flex;
+		flex-direction : row;
+		flex-wrap      : wrap;
+		justify-content: space-between;
 
-	>div {
-		display      : flex;
-		margin-bottom: .5em;
+		>div {
+			display      : flex;
+			margin-bottom: .5em;
 
-		label {
-			position   : absolute;
-			margin-left: .5em;
-			font-style : italic;
-			font-size  : 0.9em;
-			color      : $color-highlight;
-			transform  : translateX(0);
-			transition : transform .15s ease-in-out;
-		}
-
-		input {
-			width: 100%;
-		}
-
-		input,
-		textarea {
-			font-size    : 1em;
-			font-style   : italic;
-			background   : none;
-			color        : $color-copy;
-			border-bottom: 1px solid lighten($color-bg, 10%);
-			width        : 100%;
-			padding      : 0 .5em .5em;
-			margin       : 1.5em 0 1em;
-
-			&::placeholder {
-				color: lighten($color-bg, 10%);
+			label {
+				position   : absolute;
+				margin-left: .5em;
+				font-style : italic;
+				font-size  : 0.9em;
+				color      : $color-highlight;
+				transform  : translateX(0);
+				transition : transform .15s ease-in-out;
 			}
 
-			&:focus+label {
-				color     : $color-sub-copy;
-				transform : translateX(0.5em);
-				background: none;
+			input {
+				width: 100%;
 			}
-		}
 
-		&.name,
-		&.email {
-			width: 48%;
-		}
-
-		&.subject {
-			width: 100%;
-		}
-
-		&.message {
-			width: 100%;
-
+			input,
 			textarea {
-				height: 100px;
-				resize: vertical;
+				font-size    : 1em;
+				font-style   : italic;
+				background   : none;
+				color        : $color-copy;
+				border-bottom: 1px solid lighten($color-bg, 10%);
+				width        : 100%;
+				padding      : 0 .5em .5em;
+				margin       : 1.5em 0 1em;
+
+				&::placeholder {
+					color: lighten($color-bg, 10%);
+				}
+
+				&:focus+label {
+					color     : $color-sub-copy;
+					transform : translateX(0.5em);
+					background: none;
+				}
+			}
+
+			&.name,
+			&.email {
+				width: 48%;
+			}
+
+			&.subject {
+				width: 100%;
+			}
+
+			&.message {
+				width: 100%;
+
+				textarea {
+					height: 100px;
+					resize: vertical;
+				}
+			}
+		}
+
+		.submit {
+			&:focus {
+				background: $color-highlight;
 			}
 		}
 	}
 
-	.submit {
-		&:focus {
-			background: $color-highlight;
+	.popup {
+		position   : absolute;
+		top        : 0;
+		margin-top : 1em;
+		padding    : .5em 1em;
+		background : #111;
+		color      : $color-highlight;
+		opacity    : 0;
+		transform  : translateY(-100%);
+		transition : transform .3s ease-out;
+		will-change: transform;
+		text-align : center;
+
+		&.success {
+			opacity  : 1;
+			transform: translateY(0);
 		}
-	}
-}
-
-.popup {
-	position   : absolute;
-	top        : 0;
-	margin-top : 1em;
-	padding    : .5em 1em;
-	background : #111;
-	color      : $color-highlight;
-	opacity    : 0;
-	transform  : translateY(-100%);
-	transition : transform .3s ease-out;
-	will-change: transform;
-	text-align : center;
-
-	&.success {
-		opacity  : 1;
-		transform: translateY(0);
 	}
 }
 
@@ -104,6 +104,43 @@
 			&.email {
 				width: 100%;
 			}
+		}
+	}
+}
+
+body.light-mode {
+	.contact-wrapper {
+		.contact-form {
+			>div {
+				label {
+					color: $color-highlight-lt;
+				}
+
+				input,
+				textarea {
+					color        : $color-copy-lt;
+					border-bottom: 1px solid lighten($color-bg-lt, 10%);
+
+					&::placeholder {
+						color: lighten($color-bg-lt, 10%);
+					}
+
+					&:focus+label {
+						color: $color-sub-copy-lt;
+					}
+				}
+			}
+
+			.submit {
+				&:focus {
+					background: $color-highlight-lt;
+				}
+			}
+		}
+
+		.popup {
+			background: #EEE;
+			color     : $color-highlight-lt;
 		}
 	}
 }

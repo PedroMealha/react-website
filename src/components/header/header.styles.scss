@@ -34,3 +34,21 @@
 		}
 	}
 }
+
+body.light-mode {
+	.header {
+		.gradient {
+			background: linear-gradient(to right, darken($color-bg-lt, 2%) 0%, rgba(darken($color-bg-lt, 2%), 50%) 50%, rgba(darken($color-bg-lt, 2%), 50%) 80%, darken($color-bg-lt, 2%) 100%);
+		}
+
+		.copy {
+			h1 {
+				color: $color-copy-lt;
+			}
+
+			h3 {
+				color: $color-sub-copy-lt;
+			}
+		}
+	}
+}

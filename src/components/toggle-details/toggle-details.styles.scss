@@ -1,48 +1,92 @@
 @import '../global/global.styles.scss';
 
 .toggle-details {
-	position       : fixed;
-	right          : 0;
+	position       : absolute;
 	display        : none;
-	flex-flow      : column wrap;
-	justify-content: space-between;
-	width          : $padding;
-	height         : $padding * .7;
-	margin         : 15px;
+	align-items    : center;
+	justify-content: center;
+	right          : 0;
+	width          : 45px;
+	height         : 45px;
+	padding        : 10px;
 	z-index        : 500;
 	cursor         : pointer;
+	transition     : all .5s ease-out;
 
-	div {
-		height          : 2px;
-		background      : #61DFFF;
-		border-radius   : 10px;
-		margin          : 2.5px 0;
-		transform-origin: left;
-		transition      : transform .5s cubic-bezier(0.075, 0.82, 0.165, 1);
-	}
+	.toggle-button {
+		position: relative;
+		width   : 100%;
+		height  : 100%;
 
-	.top {
-		transform: rotate(0deg);
-	}
+		div {
+			position     : absolute;
+			left         : 0;
+			transform    : translateY(-50%);
+			width        : 25px;
+			height       : 2px;
+			background   : $color-highlight;
+			border-radius: 10px;
+			will-change  : transform;
+			transition   : all 0.5s ease-out;
 
-	.bottom {
-		transform: rotate(0deg);
+			&.top {
+				top: 20%;
+			}
+
+			&.mid {
+				top: 50%;
+			}
+
+			&.bot {
+				top: 80%;
+			}
+		}
 	}
 }
 
 @media screen and (max-width: 1024px) {
 	.toggle-details {
-		display: flex;
+		display     : flex;
+		// transform: translateX(99%);
 
 		&.open {
-			color: $color-copy;
+			// transform : translateX(0%);
 
-			.top {
-				transform: rotate(24deg);
+			.toggle-button {
+				div {
+					background: $color-copy;
+				}
+
+				.top {
+					top      : 50%;
+					transform: rotate(45deg);
+				}
+
+				.mid {
+					opacity: 0;
+					width  : 0;
+				}
+
+				.bot {
+					top      : 50%;
+					transform: rotate(-45deg);
+				}
 			}
+		}
+	}
+}
 
-			.bottom {
-				transform: rotate(-24deg);
+body.light-mode {
+	.toggle-details {
+		div {
+			background: $color-highlight-lt;
+		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		.toggle-details {
+			&.open {
+				color: $color-copy-lt;
 			}
 		}
 	}

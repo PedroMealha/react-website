@@ -1,11 +1,5 @@
 @import './components/global/global.styles.scss';
 
-#root {
-	padding    : $page-padding;
-	background : $color-bg;
-	user-select: none;
-}
-
 .app-wrapper {
 	position  : relative;
 	display   : flex;
@@ -14,37 +8,9 @@
 	max-width : 1920px;
 	height    : 100%;
 	background: $color-panel;
-
-}
-
-::-webkit-scrollbar {
-	width        : 4px;
-	height       : 4px;
-	border-radius: 12px;
-	cursor       : pointer;
-}
-
-::-webkit-scrollbar-track {
-	background   : transparent;
-	border-radius: 12px;
-	margin       : 5px 0;
-}
-
-::-webkit-scrollbar-thumb {
-	background   : darken($color-highlight, 20%);
-	border-radius: 12px;
-	min-height   : 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background: $color-highlight;
 }
 
 @media screen and (max-width: 1024px) {
-	#root {
-		padding: 0;
-	}
-
 	.app-wrapper {
 		.app-container-wrapper {
 			margin        : 0;
@@ -54,5 +20,11 @@
 				visibility: visible;
 			}
 		}
+	}
+}
+
+body.light-mode {
+	.app-wrapper {
+		background: $color-panel-lt;
 	}
 }

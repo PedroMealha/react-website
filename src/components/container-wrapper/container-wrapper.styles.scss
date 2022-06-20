@@ -27,3 +27,9 @@
 		}
 	}
 }
+
+body.light-mode {
+	.app-container-wrapper {
+		background: darken($color-bg-lt, 2%);
+	}
+}

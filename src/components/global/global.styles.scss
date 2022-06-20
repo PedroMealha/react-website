@@ -1,13 +1,20 @@
-$color-white       : #FFFFFF;
-$color-black       : #000000;
+$color-mono        : #FFFFFF;
 $color-bg          : #191923;
 $color-panel-light : #272730;
 $color-panel       : #20202A;
 $color-sub-copy    : #797985;
 $color-copy        : #FAFAFC;
 $color-highlight   : #61DFFF;
+$panel-gradient    : linear-gradient(38deg, $color-panel-light 0%, darken($color-panel, 1%) 100%);
 
-$panel-gradient: linear-gradient(38deg, $color-panel-light 0%, darken($color-panel, 1%) 100%);
+$color-mono-lt        : #000000;
+$color-bg-lt          : #c9e6e7;
+$color-panel-light-lt : #597e7e;
+$color-panel-lt       : #304e4e;
+$color-sub-copy-lt    : #797985;
+$color-copy-lt        : #141414;
+$color-highlight-lt   : #FF6661;
+$panel-gradient-lt    : linear-gradient(38deg, $color-panel-light-lt 0%, darken($color-panel-lt, 1%) 100%);
 
 $page-padding: 20px;
 $nav-size    : 80px;

@@ -6,12 +6,19 @@ import './toggle-details.styles.scss';
 
 const ToggleDetails = () => {
 	const { isNavOpen, setIsNavOpen } = useContext(NavigationContext);
-	const toggleIsCartOpen = () => setIsNavOpen(!isNavOpen);
+
+	const toggleIsCartOpen = e => {
+		e.preventDefault();
+		setIsNavOpen(!isNavOpen);
+	}
 
 	return (
 		<div className={ `toggle-details ${isNavOpen ? 'open' : ''}` } onClick={ toggleIsCartOpen }>
-			<div className="top"></div>
-			<div className="bottom"></div>
+			<div className="toggle-button">
+				<div className="top"></div>
+				<div className="mid"></div>
+				<div className="bot"></div>
+			</div>
 		</div>
 	)
 }

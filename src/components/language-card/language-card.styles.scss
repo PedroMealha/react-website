@@ -26,3 +26,21 @@
 		color    : $color-sub-copy;
 	}
 }
+
+body.light-mode {
+	.language-card {
+		svg {
+			circle {
+				stroke: $color-highlight-lt;
+			}
+
+			text {
+				fill: $color-copy-lt;
+			}
+		}
+
+		div {
+			color: $color-sub-copy-lt;
+		}
+	}
+}

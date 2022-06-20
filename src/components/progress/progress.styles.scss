@@ -13,6 +13,10 @@
 		white-space  : nowrap;
 	}
 
+	span {
+		color: $color-highlight;
+	}
+
 	.progress {
 		width        : 100%;
 		background   : $color-bg;
@@ -32,6 +36,28 @@
 				height       : 7px;
 				background   : darken($color-highlight, 10%);
 				border-radius: 50%;
+			}
+		}
+	}
+}
+
+body.light-mode {
+	.tool {
+		color: lighten($color-sub-copy-lt, 10%);
+
+		span {
+			color: $color-highlight-lt;
+		}
+
+		.progress {
+			background: $color-bg-lt;
+
+			>div {
+				background: linear-gradient(to right, rgba(darken($color-highlight-lt, 10%), 5%), darken($color-highlight-lt, 10%));
+
+				div {
+					background: darken($color-highlight-lt, 10%);
+				}
 			}
 		}
 	}

@@ -29,6 +29,12 @@ const NavButton = ({ buttonType }) => {
 
 	const handleExternalClick = url => window.open(url);
 
+	const handleClick = e => {
+		e.preventDefault();
+		if (isNavOpen) toggleIsCartOpen();
+		url();
+	}
+
 	const BUTTON_TYPES = {
 		about: {
 			Icon: About,
@@ -63,11 +69,6 @@ const NavButton = ({ buttonType }) => {
 	}
 
 	const { Icon, url } = BUTTON_TYPES[buttonType];
-
-	const handleClick = () => {
-		if (isNavOpen) toggleIsCartOpen();
-		url();
-	}
 
 	return (
 		<div className="nav-button" onClick={ handleClick } >

@@ -5,13 +5,26 @@
 	width        : 20px;
 	height       : 20px;
 	background   : $color-bg;
-	border       : 2px solid $color-white;
+	border       : 2px solid $color-mono;
 	border-radius: 50%;
 	padding      : 0;
+	margin       : 10px;
 	z-index      : 1;
 
 	&:hover {
 		background: $color-bg;
 		border    : 2px solid $color-highlight;
+	}
+}
+
+body.light-mode {
+	.theme-button {
+		background: $color-bg-lt;
+		border    : 2px solid $color-mono-lt;
+
+		&:hover {
+			background: $color-bg-lt;
+			border    : 2px solid $color-highlight-lt;
+		}
 	}
 }

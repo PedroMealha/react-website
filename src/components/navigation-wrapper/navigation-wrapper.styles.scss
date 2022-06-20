@@ -47,3 +47,15 @@
 		}
 	}
 }
+
+body.light-mode {
+	.app-navigation-wrapper {
+		background: $color-panel-lt;
+	}
+
+	@media screen and (max-width: 1024px) {
+		.app-navigation-wrapper {
+			box-shadow: 0 -1px 10px $color-bg-lt;
+		}
+	}
+}
