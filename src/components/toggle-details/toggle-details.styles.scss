@@ -1,17 +1,22 @@
 @import '../global/global.styles.scss';
 
 .toggle-details {
-	position       : absolute;
-	display        : none;
-	align-items    : center;
-	justify-content: center;
-	right          : 0;
-	width          : 45px;
-	height         : 45px;
-	padding        : 10px;
-	z-index        : 500;
-	cursor         : pointer;
-	transition     : all .5s ease-out;
+	position                   : absolute;
+	display                    : none;
+	right                      : 0;
+	margin                     : 5px;
+	width                      : 45px;
+	height                     : 45px;
+	padding                    : 10px;
+	z-index                    : 500;
+	cursor                     : pointer;
+	transition                 : all .5s ease-out;
+	background                 : rgba(darken($color-bg, 2%), 80%);
+	-webkit-tap-highlight-color: transparent;
+
+	&:focus {
+		background: rgba(darken($color-bg, 2%), 80%);
+	}
 
 	.toggle-button {
 		position: relative;
@@ -46,11 +51,10 @@
 
 @media screen and (max-width: 1024px) {
 	.toggle-details {
-		display     : flex;
-		// transform: translateX(99%);
+		display: block;
 
 		&.open {
-			// transform : translateX(0%);
+			background: transparent;
 
 			.toggle-button {
 				div {

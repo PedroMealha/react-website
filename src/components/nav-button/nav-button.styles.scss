@@ -1,16 +1,15 @@
 @import '../../components/global/global.styles.scss';
 
 .nav-button {
-	position   : relative;
-	cursor     : pointer;
-	margin     : 10px 0;
-	user-select: none;
+	position                   : relative;
+	cursor                     : pointer;
+	margin                     : 10px 0;
+	-webkit-tap-highlight-color: transparent;
 
 	.nav-icon {
-		display       : block;
-		width         : 25px;
-		fill          : $color-copy;
-		pointer-events: none;
+		display: block;
+		width  : 25px;
+		fill   : $color-copy;
 	}
 }
 

@@ -12,6 +12,7 @@ const App = () => {
 			<Container />
 			<Navigation />
 			<ToggleDetails />
+			<div className="app-shadow"></div>
 		</div>
 	)
 }

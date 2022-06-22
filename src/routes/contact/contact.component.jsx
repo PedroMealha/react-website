@@ -46,7 +46,23 @@ const Contact = () => {
 
 	return (
 		<div className="contact-wrapper">
-		<Header section={ 'contact' } />
+			<Header section={ 'contact' } />
+			<div className="contact-details">
+				<ul>
+					<li>
+						<h4>email</h4>
+						<span>ped.mealha@gmail.com</span>
+					</li>
+					<li>
+						<h4>phone</h4>
+						<span>+351 916076595</span>
+					</li>
+					<li>
+						<h4>skype</h4>
+						<span>pedro.m.mealha</span>
+					</li>
+				</ul>
+			</div>
 			<form className="contact-form" name="contact-form" onSubmit={ handleSubmit } ref={ form }>
 				<div className="name">
 					<input placeholder="" name="name" type="text" required onChange={ handleChange } value={ name } />
@@ -70,7 +86,7 @@ const Contact = () => {
 
 				<button className="submit" type="submit">Send</button>
 			</form>
-			
+
 			<div className={ `popup ${wasSubmitted ? 'success' : ''}` }>Email sent, I'll reply as soon as possible.<br />Thank you!</div>
 		</div>
 	)

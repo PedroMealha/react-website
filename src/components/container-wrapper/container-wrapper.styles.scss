@@ -20,7 +20,8 @@
 @media screen and (max-width: 1024px) {
 	.app-container-wrapper {
 		margin        : 0;
-		padding-bottom: $nav-size * .6;
+		height        : calc(100% - $nav-size-bottom);
+		padding-bottom: $padding;
 
 		&::-webkit-scrollbar-thumb {
 			visibility: visible;

@@ -5,15 +5,18 @@
 	flex-direction: column;
 	color         : $color-sub-copy;
 	width         : 100%;
+	padding       : $padding * .5 $padding;
+	background    : $color-panel;
 	transition    : all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 	>div {
-		display    : inline-flex;
-		align-items: center;
+		display      : inline-flex;
+		align-items  : center;
+		margin-bottom: 1em;
 
 		svg {
-			max-width: 35px;
-			fill     : darken(darken($color-highlight, 10%), 15%);
+			width: 35px;
+			fill : darken(darken($color-highlight, 10%), 15%);
 		}
 	}
 

@@ -6,7 +6,7 @@
 	color         : lighten($color-sub-copy, 10%);
 	font-size     : .9em;
 	text-transform: lowercase;
-	margin        : 5px;
+	margin        : 5px 0;
 
 	p {
 		margin-bottom: 5px;
@@ -15,6 +15,24 @@
 
 	span {
 		color: $color-highlight;
+	}
+
+	&.other {
+		display        : flex;
+		align-items    : center;
+		flex-direction : row-reverse;
+		justify-content: flex-end;
+
+		p {
+			margin-left  : .3em;
+			margin-bottom: 0;
+		}
+
+		.progress {
+			width     : 7px;
+			background: transparent;
+			margin    : 0 0.5em 0 0;
+		}
 	}
 
 	.progress {

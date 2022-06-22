@@ -7,8 +7,10 @@
 	justify-content: space-between;
 	flex           : 0 0 auto;
 	width          : 300px;
-	height         : calc(100vh - $page-padding * 2);
+	height         : calc(100% - $page-padding * 2);
 	background     : $color-panel;
+	transition     : transform .5s ease-out;
+	z-index        : 200;
 
 	.avatar-wrapper {
 		position       : relative;
@@ -58,19 +60,21 @@
 	}
 
 	.avatar-shadow {
-		position  : absolute;
-		bottom    : 0;
-		transform : translateY(100%);
-		width     : 100%;
-		height    : 50px;
-		background: linear-gradient(to bottom, $color-panel 5%, rgba($color-panel, 0%) 80%);
+		position      : absolute;
+		bottom        : 0;
+		transform     : translateY(100%);
+		width         : 100%;
+		height        : 50px;
+		background    : linear-gradient(to bottom, $color-panel 5%, rgba($color-panel, 0%) 80%);
+		pointer-events: none;
 	}
 
 	.personal-info-wrapper {
-		padding   : $padding;
-		overflow  : hidden;
-		overflow-y: scroll;
-		height    : 100%;
+		overflow     : hidden;
+		overflow-y   : scroll;
+		height       : 100%;
+		padding      : $padding;
+		margin-bottom: $padding;
 
 		&::-webkit-scrollbar-thumb {
 			visibility: hidden;
@@ -93,9 +97,15 @@
 							margin-bottom: $padding;
 						}
 
+						p,
 						span {
 							font-size: 0.9em;
 							color    : $color-sub-copy;
+						}
+
+						span {
+							color      : $color-highlight;
+							font-weight: 500;
 						}
 					}
 				}
@@ -118,8 +128,16 @@
 				margin        : $padding 0;
 
 				.learning {
-					font-size: 0.8em;
-					color    : $color-sub-copy;
+					font-size    : 0.8em;
+					color        : $color-sub-copy;
+					text-align   : right;
+					margin-bottom: 5px;
+
+					span {
+						color       : $color-highlight;
+						font-size   : 1em;
+						margin-right: .3em;
+					}
 				}
 
 				.skills {
@@ -134,12 +152,8 @@
 
 @media screen and (max-width: 1024px) {
 	.app-details-wrapper {
-		position  : fixed;
-		width     : 100%;
-		height    : 100%;
-		transform : translateX(-100%);
-		transition: transform .5s ease-out;
-		z-index   : 200;
+		width    : 100%;
+		transform: translateX(-100%);
 
 		&.open {
 			transform: translateX(0%);
@@ -150,6 +164,8 @@
 		}
 
 		.personal-info-wrapper {
+			margin-bottom: 0;
+
 			&::-webkit-scrollbar-thumb {
 				visibility: visible;
 			}

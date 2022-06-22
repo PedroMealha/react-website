@@ -31,12 +31,16 @@ const DetailsWrapper = () => {
 					<div className="location">
 						<ul>
 							<li>
-								<h4>Location:</h4>
-								<span>Portugal</span>
+								<h4>Location</h4>
+								<p>Portugal</p>
 							</li>
 							<li>
-								<h4>City:</h4>
-								<span>Lisbon</span>
+								<h4>City</h4>
+								<p>Lisbon</p>
+							</li>
+							<li>
+								<h4>Experience</h4>
+								<span>6+</span>
 							</li>
 						</ul>
 					</div>
@@ -55,10 +59,12 @@ const DetailsWrapper = () => {
 
 					<div className="skills-wrapper">
 						<h4>Coding</h4>
-						<p className="learning">* actively learning</p>
 						<Skills skillType="coding" />
 						<h4>Graphic</h4>
 						<Skills skillType="graphic" />
+						<p className="learning"><span>*</span> actively learning</p>
+						<h4>Other</h4>
+						<Skills skillType="other" />
 					</div>
 				</div>
 			</div>

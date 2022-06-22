@@ -16,10 +16,11 @@ $color-copy-lt        : #141414;
 $color-highlight-lt   : #FF6661;
 $panel-gradient-lt    : linear-gradient(38deg, $color-panel-light-lt 0%, darken($color-panel-lt, 1%) 100%);
 
-$page-padding: 20px;
-$nav-size    : 80px;
-$avatar-size : 300px;
-$padding     : 25px;
+$page-padding    : 20px;
+$nav-size        : 80px;
+$nav-size-bottom : 45px;
+$avatar-size     : 300px;
+$padding         : 25px;
 
 .font-roboto {
 	font-family: 'Roboto', sans-serif;

@@ -20,57 +20,62 @@ const CODING_SKILLS = {
 	},
 	3: {
 		title: 'ReactJs',
-		percent: 40,
+		percent: 35,
 		learning: true
 	},
 	4: {
 		title: 'VueJs',
-		percent: 30,
+		percent: 25,
 		learning: true
-	},
-	5: {
-		title: 'NodeJs',
-		percent: 20,
-		learning: false
-	},
-	6: {
-		title: 'Git',
-		percent: 40,
-		learning: false
 	}
 }
 
 const GRAPHIC_SKILLS = {
 	0: {
-		title: 'UI/UX',
-		percent: 75,
-		learning: false
-	},
-	1: {
 		title: 'Adobe Photoshop',
 		percent: 95,
 		learning: false
 	},
-	2: {
+	1: {
 		title: 'Adobe Illustrator',
 		percent: 95,
 		learning: false
 	},
-	3: {
+	2: {
 		title: 'Adobe XD',
 		percent: 80,
 		learning: false
 	},
-	4: {
+	3: {
 		title: 'Adobe After Effects',
 		percent: 50,
 		learning: false
 	}
 }
 
+const OTHER_SKILLS = {
+	0: {
+		title: 'UI/UX',
+		learning: false
+	},
+	1: {
+		title: 'SCSS/LESS',
+		learning: false
+	},
+	2: {
+		title: 'Git',
+		learning: false
+	},
+	3: {
+		title: 'NodeJs',
+		learning: false
+	}
+}
+
 const SKILL_TYPES = {
 	coding: CODING_SKILLS,
-	graphic: GRAPHIC_SKILLS
+	graphic: GRAPHIC_SKILLS,
+	other: OTHER_SKILLS
 }
 
 const Skills = ({ skillType }) =>

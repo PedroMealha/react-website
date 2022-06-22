@@ -14,6 +14,8 @@ const Navigation = () =>
 			<NavButton buttonType='behance' />
 			<NavButton buttonType='contact' />
 		</div>
+
+		<div className="navigation-shadow"></div>
 	</div>
 
 export default Navigation;
