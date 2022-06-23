@@ -1,20 +1,20 @@
 
 import './header.styles.scss';
 
-import ThemeButton from "../theme-button/theme-button.component";
-
-const HEADERS = {
-	about: {
-		h1: 'about me',
-		h3: 'Who am I?'
-	},
-	contact: {
-		h1: 'contact',
-		h3: 'Let\'s talk?'
-	},
-}
+// import ThemeButton from "../theme-button/theme-button.component";
 
 const Header = ({ section }) => {
+	const HEADERS = {
+		about: {
+			h1: 'about me',
+			h3: 'Who am I?'
+		},
+		contact: {
+			h1: 'contact',
+			h3: 'Let\'s talk?'
+		},
+	}
+	
 	const { h1, h3 } = HEADERS[section];
 
 	return (

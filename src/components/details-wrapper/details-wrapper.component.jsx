@@ -58,13 +58,8 @@ const DetailsWrapper = () => {
 					<Divider />
 
 					<div className="skills-wrapper">
-						<h4>Coding</h4>
-						<Skills skillType="coding" />
-						<h4>Graphic</h4>
-						<Skills skillType="graphic" />
+						<Skills />
 						<p className="learning"><span>*</span> actively learning</p>
-						<h4>Other</h4>
-						<Skills skillType="other" />
 					</div>
 				</div>
 			</div>

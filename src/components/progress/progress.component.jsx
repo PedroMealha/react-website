@@ -16,4 +16,3 @@ const Progress = ({ skill }) => {
 }
 
 export default Progress;
-module.exports = Progress;
