@@ -1,0 +1,93 @@
+@import '../global/global.styles.scss';
+
+.personal-info-wrapper {
+	overflow     : hidden;
+	overflow-y   : scroll;
+	height       : 100%;
+	padding      : $padding;
+	margin-bottom: $padding;
+
+	&::-webkit-scrollbar-thumb {
+		visibility: hidden;
+	}
+
+	&:hover::-webkit-scrollbar-thumb {
+		visibility: visible;
+	}
+
+	.personal-info {
+		.location {
+			ul {
+				li {
+					display        : flex;
+					justify-content: space-between;
+					align-items    : center;
+					margin-bottom  : 5px;
+
+					&:last-child {
+						margin-bottom: $padding;
+					}
+
+					p,
+					span {
+						font-size: 0.9em;
+						color    : $color-sub-copy;
+					}
+
+					span {
+						color      : $color-highlight;
+						font-weight: 500;
+					}
+				}
+			}
+		}
+
+		.languages-wrapper {
+			display       : flex;
+			flex-direction: column;
+			margin        : $padding 0;
+
+			.languages {
+				display        : flex;
+				justify-content: space-evenly;
+			}
+		}
+
+		.skills-wrapper {
+			display       : flex;
+			flex-direction: column;
+			margin        : $padding 0;
+
+			.learning {
+				font-size    : 0.8em;
+				color        : $color-sub-copy;
+				text-align   : right;
+				margin-bottom: 5px;
+
+				span {
+					color       : $color-highlight;
+					font-size   : 1em;
+					margin-right: .3em;
+				}
+			}
+
+			.skills {
+				display       : flex;
+				flex-direction: column;
+				margin        : $padding * .5 0 $padding;
+			}
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 1024px) {
+	.personal-info-wrapper {
+		margin-bottom: 0;
+
+		&::-webkit-scrollbar-thumb {
+			visibility: visible;
+		}
+	}
+}

@@ -31,7 +31,7 @@ const Contact = () => {
 
 				setTimeout(() => {
 					setWasSubmitted(false);
-				}, 2000);
+				}, 3000);
 
 				resetFormFields();
 			}, err => {
@@ -87,7 +87,9 @@ const Contact = () => {
 				<button className="submit" type="submit">Send</button>
 			</form>
 
-			<div className={ `popup ${wasSubmitted ? 'success' : ''}` }>Email sent, I'll reply as soon as possible.<br />Thank you!</div>
+			<div className={ `popup ${wasSubmitted ? 'success' : ''}` }>
+				<div>Email sent, I'll reply as soon as possible.<br />Thank you!</div>
+			</div>
 		</div>
 	)
 }

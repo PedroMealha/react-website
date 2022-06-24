@@ -1,3 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Skill component expect to render 1`] = `<Fragment />`;
+exports[`Skill component expect to render 1`] = `
+<Fragment>
+  <h4>
+    coding
+  </h4>
+  <div
+    className="skills"
+  >
+    <Progress
+      skill={
+        Object {
+          "0": Object {
+            "id": 0,
+            "learning": false,
+            "percent": 95,
+            "title": "HTML",
+          },
+        }
+      }
+    />
+  </div>
+</Fragment>
+`;

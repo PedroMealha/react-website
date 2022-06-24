@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PersonalInfoWrapper component expect to render 1`] = `
+<div
+  className="personal-info-wrapper"
+>
+  <div
+    className="personal-info"
+  >
+    <div
+      className="location"
+    >
+      <ul>
+        <li>
+          <h4>
+            Location
+          </h4>
+          <p>
+            Portugal
+          </p>
+        </li>
+        <li>
+          <h4>
+            City
+          </h4>
+          <p>
+            Lisbon
+          </p>
+        </li>
+        <li>
+          <h4>
+            Experience
+          </h4>
+          <span>
+            6+
+          </span>
+        </li>
+      </ul>
+    </div>
+    <Divider />
+    <div
+      className="languages-wrapper"
+    >
+      <h4>
+        Languages
+      </h4>
+      <div
+        className="languages"
+      >
+        <LanguageCard
+          language="Portuguese"
+          percent="100"
+        />
+        <LanguageCard
+          language="English"
+          percent="95"
+        />
+      </div>
+    </div>
+    <Divider />
+    <div
+      className="skills-wrapper"
+    >
+      <Skills
+        stackMap={Object {}}
+      />
+      <p
+        className="learning"
+      >
+        <span>
+          *
+        </span>
+         actively learning
+      </p>
+    </div>
+  </div>
+</div>
+`;

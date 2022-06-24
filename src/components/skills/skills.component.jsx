@@ -1,13 +1,10 @@
-import { Fragment, useContext } from "react";
-import { StackContext } from '../../context/stack.context';
+import { Fragment } from "react";
 
 import Progress from "../progress/progress.component";
 
 import './skills.styles.scss';
 
-const Skills = () => {
-
-	const { stackMap } = useContext(StackContext);
+const Skills = ({ stackMap }) => {
 
 	return (
 		<Fragment>
