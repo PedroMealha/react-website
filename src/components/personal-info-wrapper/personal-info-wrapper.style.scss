@@ -58,19 +58,6 @@
 			flex-direction: column;
 			margin        : $padding 0;
 
-			.learning {
-				font-size    : 0.8em;
-				color        : $color-sub-copy;
-				text-align   : right;
-				margin-bottom: 5px;
-
-				span {
-					color       : $color-highlight;
-					font-size   : 1em;
-					margin-right: .3em;
-				}
-			}
-
 			.skills {
 				display       : flex;
 				flex-direction: column;

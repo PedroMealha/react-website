@@ -1,10 +1,12 @@
-import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 
 import './nav-button.styles.scss';
 
-import { SectionContext } from "../../context/section.context";
-import { NavigationContext } from "../../context/navigation.context";
+import { setCurrentSection } from "../../store/section/section.actions";
+
+import { selectIsNavOpen } from "../../store/navigation/navigation.selector";
+import { setIsNavOpen } from "../../store/navigation/navigation.actions";
 
 import { ReactComponent as About } from '../../assets/about.svg';
 import { ReactComponent as LinkedIn } from '../../assets/linkedin.svg';
@@ -14,13 +16,16 @@ import { ReactComponent as Contact } from '../../assets/contact.svg';
 import { ReactComponent as Skills } from '../../assets/skills.svg';
 
 const NavButton = ({ buttonType }) => {
-	const { isNavOpen, setIsNavOpen } = useContext(NavigationContext);
-	const toggleIsCartOpen = () => setIsNavOpen(false);
+	const isNavOpen = useSelector(selectIsNavOpen);
+	const dispatch = useDispatch();
 
+	const toggleIsCartOpen = e => {
+		e.preventDefault();
+		dispatch(setIsNavOpen(true));
+	}
 
 	const navigate = useNavigate();
-	const { setCurrentSection } = useContext(SectionContext);
-	const updateCurrentSection = () => setCurrentSection(buttonType);
+	const updateCurrentSection = () => dispatch(setCurrentSection(buttonType));
 
 	const handleInternalClick = path => {
 		updateCurrentSection();

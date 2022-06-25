@@ -1,0 +1,1 @@
+export const selectIsNavOpen = state => state.navigation.isNavOpen;

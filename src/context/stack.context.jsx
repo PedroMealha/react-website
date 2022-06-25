@@ -1,6 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 
-import { getStackFromFirestore } from "../firebase/firebase.utils";
+import { getStackFromFirestore } from "../utils/firebase/firebase.utils";
 
 export const StackContext = createContext({
 	stackMap: {}

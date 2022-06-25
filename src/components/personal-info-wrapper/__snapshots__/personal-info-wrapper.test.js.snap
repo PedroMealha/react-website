@@ -61,17 +61,7 @@ exports[`PersonalInfoWrapper component expect to render 1`] = `
     <div
       className="skills-wrapper"
     >
-      <Skills
-        stackMap={Object {}}
-      />
-      <p
-        className="learning"
-      >
-        <span>
-          *
-        </span>
-         actively learning
-      </p>
+      <Skills />
     </div>
   </div>
 </div>

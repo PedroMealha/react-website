@@ -1,15 +1,17 @@
-import { useContext } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
-import { NavigationContext } from '../../context/navigation.context';
+import { selectIsNavOpen } from "../../store/navigation/navigation.selector";
+import { setIsNavOpen } from "../../store/navigation/navigation.actions";
 
 import './toggle-details.styles.scss';
 
 const ToggleDetails = () => {
-	const { isNavOpen, setIsNavOpen } = useContext(NavigationContext);
+	const isNavOpen = useSelector(selectIsNavOpen);
+	const dispatch = useDispatch();
 
 	const toggleIsCartOpen = e => {
 		e.preventDefault();
-		setIsNavOpen(!isNavOpen);
+		dispatch(setIsNavOpen(!isNavOpen));
 	}
 
 	return (

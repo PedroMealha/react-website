@@ -7,7 +7,6 @@ describe('Skill component', () => {
 		coding: [
 			{
 				0: {
-					id: 0,
 					learning: false,
 					percent: 95,
 					title: 'HTML'

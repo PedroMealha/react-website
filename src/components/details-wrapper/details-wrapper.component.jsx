@@ -1,6 +1,5 @@
-import { useContext } from 'react';
-
-import { NavigationContext } from '../../context/navigation.context';
+import { useSelector } from "react-redux";
+import { selectIsNavOpen } from "../../store/navigation/navigation.selector";
 
 import AvatarWrapper from "../avatar-wrapper/avatar-wrapper.component";
 import PersonalInfoWrapper from "../personal-info-wrapper/personal-info-wrapper.component";
@@ -8,7 +7,7 @@ import PersonalInfoWrapper from "../personal-info-wrapper/personal-info-wrapper.
 import './details-wrapper.styles.scss';
 
 const DetailsWrapper = () => {
-	const { isNavOpen } = useContext(NavigationContext);
+	const isNavOpen = useSelector(selectIsNavOpen);
 
 	return (
 		<div className={ `app-details-wrapper ${isNavOpen ? 'open' : ''}` }>
