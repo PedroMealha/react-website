@@ -10,8 +10,6 @@ export const selectStacks = createSelector(
 export const selectStacksMap = createSelector(
 	[selectStacks],
 	(stacks) => {
-		console.log('stacks:', stacks);
-
 		return stacks.reduce((acc, stack) => {
 			const { area, skills } = stack;
 			acc[area.toLowerCase()] = skills;

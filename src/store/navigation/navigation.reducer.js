@@ -4,8 +4,11 @@ const INITIAL_STATE = {
   isNavOpen: false,
 };
 
-export const navigationReducer = (state = INITIAL_STATE, action) => {
-  const { type, payload } = action;
+export const navigationReducer = (
+	state = INITIAL_STATE,
+	action = {}
+) => {
+	const { type, payload } = action;
 
   switch (type) {
     case NAV_ACTION_TYPES.SET_CURRENT_NAV:

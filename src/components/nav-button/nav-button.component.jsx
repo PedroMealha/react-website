@@ -3,8 +3,6 @@ import { useSelector, useDispatch } from "react-redux";
 
 import './nav-button.styles.scss';
 
-import { setCurrentSection } from "../../store/section/section.actions";
-
 import { selectIsNavOpen } from "../../store/navigation/navigation.selector";
 import { setIsNavOpen } from "../../store/navigation/navigation.actions";
 
@@ -25,10 +23,8 @@ const NavButton = ({ buttonType }) => {
 	}
 
 	const navigate = useNavigate();
-	const updateCurrentSection = () => dispatch(setCurrentSection(buttonType));
 
 	const handleInternalClick = path => {
-		updateCurrentSection();
 		navigate(path);
 	};
 

@@ -16,9 +16,13 @@
 				align-items    : center;
 				margin-bottom  : 5px;
 
-				span {
+				p {
 					font-size: 0.9em;
 					color    : $color-sub-copy;
+
+					span {
+						color: $color-highlight;
+					}
 				}
 			}
 		}

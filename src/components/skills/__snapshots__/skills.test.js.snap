@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Skill component expect to render 1`] = `
+<Fragment>
+  <h4>
+    coding
+  </h4>
+  <div
+    className="skills"
+  >
+    <Progress
+      skill={
+        Object {
+          "0": Object {
+            "learning": false,
+            "percent": 95,
+            "title": "HTML",
+          },
+        }
+      }
+    />
+  </div>
+  <p
+    className="learning"
+  >
+    <span>
+      *
+    </span>
+     actively learning
+  </p>
+</Fragment>
+`;

@@ -51,15 +51,15 @@ const Contact = () => {
 				<ul>
 					<li>
 						<h4>email</h4>
-						<span>ped.mealha@gmail.com</span>
+						<p>ped.mealha@gmail.com</p>
 					</li>
 					<li>
 						<h4>phone</h4>
-						<span>+351 916076595</span>
+						<p><span>+351</span> 916076595</p>
 					</li>
 					<li>
 						<h4>skype</h4>
-						<span>pedro.m.mealha</span>
+						<p>pedro.m.mealha</p>
 					</li>
 				</ul>
 			</div>

@@ -1,1 +1,0 @@
-export const selectSection = state => state.section.currentSection;
