@@ -18,7 +18,7 @@ const Skills = ({ stackMap }) => {
 							<h4>{ area }</h4>
 							<div className="skills">
 								{
-									stack.map((skill, idx) =>
+									stack.map(skill =>
 										<Progress key={ skill.title } skill={ skill } />)
 								}
 							</div>
