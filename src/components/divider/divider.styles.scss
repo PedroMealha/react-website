@@ -4,6 +4,7 @@
 	width     : 100%;
 	height    : 1px;
 	background: lighten($color-panel, 10%);
+	margin    : $padding 0;
 }
 
 body.light-mode {

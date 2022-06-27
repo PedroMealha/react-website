@@ -46,6 +46,8 @@ const PersonalInfoWrapper = () => {
 					<Skills stackMap={ stackMap } />
 				</div>
 			</div>
+			
+			<div className="personal-info-shadow"></div>
 		</div>
 	)
 }
