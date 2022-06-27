@@ -1,0 +1,14 @@
+@import '../../components/global/global.styles.scss';
+
+.strengths-wrapper {
+	display        : flex;
+	justify-content: space-between;
+	flex-direction : row;
+	gap            : $padding;
+}
+
+@media only screen and (max-width: 1024px) {
+	.strengths {
+		flex-direction: column;
+	}
+}

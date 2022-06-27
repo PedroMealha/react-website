@@ -1,5 +1,5 @@
 import Header from '../../components/header/header.component';
-import StackCard from "../../components/stack-card/stack-card.component";
+import StrenthsWrapper from "../../components/strengths-wrapper/strengths-wrapper.component";
 
 import Logo from '../../assets/logo.svg';
 
@@ -20,12 +20,7 @@ const About = () =>
 			<p>On a personal note, i'm a <span>passionate learner</span> who loves to explore the world of programming doing the most random mini projects as I evolve. A <span>responsible</span> and <span>down-to-earth</span> individual but also a <span>goofy</span>, outgoing <span>chill</span> person who enjoys the perks of team dynamics and a good laugh!</p>
 		</div>
 
-		<div className="strengths">
-			<StackCard stackType="team" />
-			<StackCard stackType="eye" />
-			<StackCard stackType="books" />
-			{/* <StackCard stackType="stack" /> */ }
-		</div>
+		<StrenthsWrapper />
 	</div>
 
 export default About;

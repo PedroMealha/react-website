@@ -20,19 +20,6 @@
 	span {
 		color: $color-highlight;
 	}
-
-	.strengths {
-		display        : flex;
-		justify-content: space-between;
-		flex-direction : row;
-		gap            : $padding;
-
-		.stack-card {
-			h3 {
-				margin-left: .6em;
-			}
-		}
-	}
 }
 
 @media only screen and (max-width: 1024px) {
@@ -41,10 +28,6 @@
 
 		.intro {
 			margin-bottom: $padding;
-		}
-
-		.strengths {
-			flex-direction: column;
 		}
 	}
 }

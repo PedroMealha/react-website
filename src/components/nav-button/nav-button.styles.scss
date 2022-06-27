@@ -6,6 +6,10 @@
 	margin                     : 10px 0;
 	-webkit-tap-highlight-color: transparent;
 
+	* {
+		pointer-events: none;
+	}
+
 	.nav-icon {
 		display: block;
 		width  : 25px;

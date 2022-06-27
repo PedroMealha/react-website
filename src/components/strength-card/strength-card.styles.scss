@@ -1,6 +1,6 @@
 @import '../../components/global/global.styles.scss';
 
-.stack-card {
+.strength-card {
 	display       : flex;
 	flex-direction: column;
 	color         : $color-sub-copy;
@@ -22,6 +22,7 @@
 
 	h3 {
 		color: $color-copy;
+		margin-left: .6em;
 	}
 
 	p {
@@ -30,7 +31,7 @@
 }
 
 body.light-mode {
-	.stack-card {
+	.strength-card {
 		color: $color-sub-copy-lt;
 
 		>div {
