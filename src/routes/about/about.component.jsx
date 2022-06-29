@@ -1,5 +1,6 @@
 import Header from '../../components/header/header.component';
 import StrengthsWrapper from "../../components/strengths-wrapper/strengths-wrapper.component";
+import ExperienceWrapper from "../../components/experience-wrapper/experience-wrapper.component";
 
 import Logo from '../../assets/logo.svg';
 
@@ -21,6 +22,8 @@ const About = () =>
 		</div>
 
 		<StrengthsWrapper />
+		
+		<ExperienceWrapper />
 	</div>
 
 export default About;

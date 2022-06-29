@@ -1,0 +1,65 @@
+@import '../../components/global/global.styles.scss';
+
+$bullet-size: 10px;
+
+.timeline-wrapper {
+	margin               : $padding auto 0;
+	display              : grid;
+	grid-template-columns: 1fr 1fr;
+
+	.timeline-item-container {
+		position      : relative;
+		display       : flex;
+		flex-direction: column;
+		align-items   : center;
+
+		h3 {
+			color        : $color-highlight;
+			margin-bottom: $padding * .25;
+		}
+
+		.timeline-item {
+			padding    : $padding $padding 0;
+			margin     : $padding 0;
+			position   : relative;
+			color      : $color-copy;
+			border-left: 2px solid $color-panel;
+
+			h4 {
+				margin-bottom: $padding * .25;
+
+				span {
+					margin-left: 0.5em;
+					font-size  : 0.9em;
+					font-weight: 300;
+					color      : $color-sub-copy;
+				}
+			}
+
+			&:first-child {
+				margin: 0 0 $padding;
+			}
+
+			&::before {
+				content    : attr(from-to);
+				position   : absolute;
+				top        : $bullet-size * .2;
+				left       : $padding;
+				font-size  : .9em;
+				font-weight: 300;
+				@extend .font-roboto;
+			}
+
+
+			&::after {
+				content   : '';
+				position  : absolute;
+				top       : $bullet-size * .5;
+				left      : -$bullet-size * .5 - 1;
+				width     : $bullet-size;
+				height    : $bullet-size;
+				background: $color-highlight;
+			}
+		}
+	}
+}

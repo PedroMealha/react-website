@@ -8,7 +8,7 @@ const StrengthCard = ({ strength }) => {
 		<div className="strength-card">
 			<div>
 				<Icon />
-				<h3>{ title }</h3>
+				<h4>{ title }</h4>
 			</div>
 			<p>{ description }</p>
 		</div>

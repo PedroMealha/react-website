@@ -15,10 +15,10 @@
 
 	.intro {
 		margin-bottom: $padding * 2;
-	}
 
-	span {
-		color: $color-highlight;
+		> span {
+			color: $color-highlight;
+		}
 	}
 }
 

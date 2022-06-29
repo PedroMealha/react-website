@@ -29,6 +29,8 @@ const App = () => {
 			<Container />
 			<Navigation />
 			<ToggleDetails />
+			<div className="container-shadow"></div>
+			<div className="container-shadow"></div>
 		</div>
 	)
 }

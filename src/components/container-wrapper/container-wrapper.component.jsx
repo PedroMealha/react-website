@@ -14,8 +14,6 @@ const Container = () =>
 				<Route path="/contact" element={ <Contact /> }></Route>
 			</Routes>
 		</div>
-		<div className="container-shadow"></div>
-		<div className="container-shadow"></div>
 	</div>
 
 export default Container;

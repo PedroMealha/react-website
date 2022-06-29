@@ -6,7 +6,7 @@
 	color         : $color-sub-copy;
 	width         : 100%;
 	padding       : $padding * .5 $padding;
-	background    : $color-panel;
+	background    : $color-bg;
 	transition    : all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 	>div {
@@ -20,7 +20,7 @@
 		}
 	}
 
-	h3 {
+	h4 {
 		color: $color-copy;
 		margin-left: .6em;
 	}
