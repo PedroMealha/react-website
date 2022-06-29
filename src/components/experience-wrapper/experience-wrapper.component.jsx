@@ -7,7 +7,7 @@ const ExperienceWrapper = () =>
 			<div className="items">
 				<div className="timeline-item" from-to='2017 - 2022'>
 					<h4>Mainbrain Lda</h4>
-					<p>Develop Ad Banners with high focus on clean code, performance, cross-browsing and platform compatibility to work on publishers/ platforms such as Weborama, Platform 161, DoubleClick Campaign Manager, Double Click Studio, AdForm.</p>
+					<p>Develop Ad Banners with high focus on clean code, performance, cross-browsing and platform compatibility to work on publishers/ platforms such as Weborama, Platform 161, DoubleClick Campaign Manager, Double Click Studio, AdForm</p>
 					<p>Make sure the end product matches the client`s design on a pixel-perfect level</p>
 					<p>Contributing for company`s overall performance and workflow efficiency by creating components, modules and tools for such purpose</p>
 					<p>Complementary design from clients whenever necessary as well as optimization of their assets for web (images/ videos)</p>
@@ -29,7 +29,7 @@ const ExperienceWrapper = () =>
 					<h4>SbH - Solutions by Heart</h4>
 					<p>Webmaster, Web designer (website content, banners, etc.)</p>
 					<p>Responsible in the area of Augmented Reality</p>
-					<p>3D modeling of children`s book characters  in collaboration with ADETTI (Association for the Development of Telecommunications and Computer Techniques) for the creation of e-books with built-in Augmented Reality</p>
+					<p>3D modeling of children`s book characters  in collaboration with ADETTI for the creation of e-books with built-in Augmented Reality</p>
 				</div>
 			</div>
 		</div>
