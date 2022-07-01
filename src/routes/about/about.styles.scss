@@ -16,8 +16,12 @@
 	.intro {
 		margin-bottom: $padding * 2;
 
-		> p span {
-			color: $color-highlight;
+		>p {
+			color: $color-sub-copy;
+
+			span {
+				color: $color-highlight;
+			}
 		}
 	}
 }

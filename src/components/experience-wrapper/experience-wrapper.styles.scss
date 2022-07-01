@@ -50,6 +50,7 @@ $list-bullet-size: 5px;
 
 			p {
 				position: relative;
+				color: $color-sub-copy;
 
 				&::before {
 					content   : '';
