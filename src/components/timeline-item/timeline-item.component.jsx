@@ -1,11 +1,16 @@
 import { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 import "./timeline-item.styles.scss";
 
 const TimelineItem = ({ milestone }) => {
   const itemHeight = useRef(null);
-  const { title, subtitle, fromto, paragraphs } = milestone;
-	const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
+  const { title, subtitle, fromto, paragraphs, certification } = milestone;
+  const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
+
+  const handleCertification = () => {
+    window.open(certification);
+  };
 
   const handleClick = () => {
     setIsDescriptionOpen((state) => !state);
@@ -16,7 +21,7 @@ const TimelineItem = ({ milestone }) => {
       ref={itemHeight}
       className={`timeline-item ${isDescriptionOpen ? "item-open" : ""}`}
       from-to={fromto}
-      onClick={handleClick}
+      onClick={paragraphs.length > 0 ? handleClick : undefined}
     >
       <div className="item-title">
         <div>
@@ -25,7 +30,8 @@ const TimelineItem = ({ milestone }) => {
             <span>{subtitle}</span>
           </h4>
         </div>
-        <span>&rsaquo;</span>
+        {paragraphs.length > 0 && <span>&rsaquo;</span>}
+        {certification && <i onClick={handleCertification}>open_in_new</i>}
       </div>
       <div className="item-description">
         {paragraphs.map((paragraph, idx) => (

@@ -32,3 +32,4 @@ const Skills = ({ stackMap }) => {
 }
 
 export default Skills;
+

@@ -33,7 +33,7 @@ const TIMELINE_DATA = [
 			},
 		]
 	},
-	
+
 	{
 		area: 'Professional Experience',
 		milestones: [
@@ -79,6 +79,20 @@ const TIMELINE_DATA = [
 					"3D modeling of children`s book characters  in collaboration with ADETTI for the creation of e-books with built-in Augmented Reality",
 				],
 			},
+		]
+	},
+
+
+	{
+		area: 'Certifications',
+		milestones: [
+			{
+				title: "Udemy",
+				subtitle: "Testing React with Jest and React Testing Library (RTL)",
+				fromto: "2022",
+				paragraphs: [],
+				certification: 'https://www.udemy.com/certificate/UC-2273ad83-5b75-49e4-9acc-9de2b0c66280/'
+			}
 		]
 	}
 ];
