@@ -25,6 +25,12 @@ $list-bullet-size: 5px;
 			will-change: transform;
 		}
 
+		h6 {
+			font-size  : .8em;
+			color      : $color-sub-copy;
+			font-weight: 300;
+		}
+
 		h4 {
 			span {
 				margin-left: 0.5em;
@@ -65,7 +71,7 @@ $list-bullet-size: 5px;
 	}
 
 	&.item-open {
-		height    : auto;
+		height: auto;
 
 		.item-title {
 			>span {
@@ -110,7 +116,7 @@ $list-bullet-size: 5px;
 		}
 	}
 
-	i{
+	i {
 		font-size: 0.9em;
 	}
 }

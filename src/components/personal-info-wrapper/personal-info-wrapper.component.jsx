@@ -43,7 +43,7 @@ const PersonalInfoWrapper = () => {
 				<Divider />
 
 				<div className="skills-wrapper">
-					<Skills stackMap={ stackMap } />
+					<Skills />
 				</div>
 			</div>
 			

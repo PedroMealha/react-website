@@ -5,7 +5,8 @@ import "./timeline-item.styles.scss";
 
 const TimelineItem = ({ milestone }) => {
   const itemHeight = useRef(null);
-  const { title, subtitle, fromto, paragraphs, certification } = milestone;
+  const { title, subtitle, fromto, paragraphs, certification, position } =
+    milestone;
   const [isDescriptionOpen, setIsDescriptionOpen] = useState(false);
 
   const handleCertification = () => {
@@ -29,6 +30,7 @@ const TimelineItem = ({ milestone }) => {
             {title}
             <span>{subtitle}</span>
           </h4>
+          {position && <h6>{position}</h6>}
         </div>
         {paragraphs.length > 0 && <span>&rsaquo;</span>}
         {certification && <i onClick={handleCertification}>open_in_new</i>}

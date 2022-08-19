@@ -19,13 +19,13 @@ const STACK_DATA = [
 			},
 			{
 				title: "ReactJs",
-				percent: 35,
+				percent: 55,
 				learning: true,
 			},
 			{
 				title: "VueJs",
 				percent: 25,
-				learning: true,
+				learning: false,
 			},
 		],
 	},
@@ -59,11 +59,15 @@ const STACK_DATA = [
 		skills: [
 			{
 				title: "Redux",
-				learning: true,
+				learning: false,
 			},
 			{
 				title: "Unit Testing",
-				learning: true,
+				learning: false,
+			},
+			{
+				title: "React Testing Library",
+				learning: false,
 			},
 			{
 				title: "Jest",
@@ -87,6 +91,10 @@ const STACK_DATA = [
 			},
 			{
 				title: "NodeJs",
+				learning: false,
+			},
+			{
+				title: "npm",
 				learning: false,
 			},
 		],

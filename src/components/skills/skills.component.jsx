@@ -2,34 +2,32 @@ import { Fragment } from "react";
 
 import Progress from "../progress/progress.component";
 
-import './skills.styles.scss';
+import "./skills.styles.scss";
 
-const Skills = ({ stackMap }) => {
+import STACK_DATA from "../skills/skills.db";
 
-	return (
-		<Fragment>
-			{
-				Object.keys(stackMap).map(area => {
-					const stack = stackMap[area];
+const Skills = () => {
+  return (
+    <Fragment>
+      {STACK_DATA.map((group) => {
+        const { area, skills } = group;
 
-					return (
-						stack &&
-						<Fragment key={ area }>
-							<h4>{ area }</h4>
-							<div className="skills">
-								{
-									stack.map(skill =>
-										<Progress key={ skill.title } skill={ skill } />)
-								}
-							</div>
-						</Fragment>
-					)
-				})
-			}
-			<p className="learning"><span>*</span> actively learning</p>
-		</Fragment>
-	)
-}
+        return (
+          <Fragment key={area}>
+            <h4>{area}</h4>
+            <div className="skills">
+              {skills.map((skill) => (
+                <Progress key={skill.title} skill={skill} />
+              ))}
+            </div>
+          </Fragment>
+        );
+      })}
+      <p className="learning">
+        <span>*</span> actively learning
+      </p>
+    </Fragment>
+  );
+};
 
 export default Skills;
-

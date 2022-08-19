@@ -40,6 +40,7 @@ const TIMELINE_DATA = [
 			{
 				title: "Mainbrain Lda",
 				subtitle: "",
+				position: "Frontend Developer",
 				fromto: "2017 - 2022",
 				paragraphs: [
 					"Develop Ad Banners with high focus on clean code, performance, cross-browsing and platform compatibility to work on publishers/ platforms such as Weborama, Platform 161, DoubleClick Campaign Manager, Double Click Studio, AdForm",
@@ -52,6 +53,7 @@ const TIMELINE_DATA = [
 			{
 				title: "Aspas & Parentesis",
 				subtitle: "",
+				position: "Graphic & Web Designer",
 				fromto: "2014 - 2015",
 				paragraphs: [
 					"Websites [Mar e Montanha, 1º Salão Agro-Alimentar em Paris, Aroma do Campo]",
@@ -63,6 +65,7 @@ const TIMELINE_DATA = [
 			{
 				title: "Infraconsult",
 				subtitle: "",
+				position: "Designer",
 				fromto: "2008 - 2009",
 				paragraphs: [
 					"Line work correction, organization of layers, creation of trafﬁc signals to scale, placement of trafﬁc signs in projects, revisions and notes of projects errors, creation of charts, ﬁnal arrangements",
@@ -72,6 +75,7 @@ const TIMELINE_DATA = [
 			{
 				title: "SbH",
 				subtitle: "Solutions by Heart",
+				position: "Graphic Design / Webdesigner / 3D Modeling",
 				fromto: "2007 - 2008",
 				paragraphs: [
 					"Webmaster, Web designer (website content, banners, etc.)",
