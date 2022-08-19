@@ -18,6 +18,10 @@ $list-bullet-size: 5px;
 		margin-bottom  : $padding * .25;
 		padding        : 0 $padding * .25;
 
+		>div {
+			padding-right: .5em;
+		}
+
 		>span {
 			transform  : rotate(90deg);
 			font-size  : 1.5em;
