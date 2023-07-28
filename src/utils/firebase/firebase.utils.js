@@ -3,12 +3,7 @@ import "firebase/compat/firestore";
 import { collection, query, getDocs } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA_JwwhTgImFh-bEzuDjkwwzUzKwsLWyqE",
-  authDomain: "my-website-839f8.firebaseapp.com",
-  projectId: "my-website-839f8",
-  storageBucket: "my-website-839f8.appspot.com",
-  messagingSenderId: "359510626595",
-  appId: "1:359510626595:web:57032b3200ef73e5bb3c96",
+  //import data
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
